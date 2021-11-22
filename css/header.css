@@ -1,52 +1,93 @@
-.logo {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 70px;
-    top: 1px;
-}
-
-.title {
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    left: 150px;
-    top: 30px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 75px;
-    display: flex;
-    align-items: center;
-    text-align: center
+.tenWeb {
+    font-size: 25px;
+    color: white;
 }
 
 .search {
-    position: absolute;
-    width: 400px;
-    height: 30px;
-    left: 700px;
-    top: 45px;
-    background: #C4C4C4;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    border-radius: 5px;
+    margin-left: auto;
 }
 
-.icon-search {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1070px;
-    top: 45px;
-    border-radius: 0px 5px 5px 0px;
+.checkout {
+    padding-top: 10px;
 }
-.icon-checkout
-{
+
+#icon_checkout {
+    font-size: 25px;
+}
+
+.home {
+    width: 25%;
+    float: left;
+}
+
+.product {
+    width: 25%;
+    float: left;
+}
+
+.about {
+    width: 25%;
+    float: left;
+}
+
+.contact {
+    width: 25%;
+    float: left;
+    border: red;
+
+}
+
+#ctn_header {
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #ccc;
+}
+
+#btn1 {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#btn2 {
+    border-radius: 0px;
+}
+
+#btn3 {
+    border-radius: 0px;
+}
+
+#btn4 {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.btn-block {
+    display: inline-block;
+}
+
+.inProduct {
+    display: none;
     position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 1100px;
-    top: 45px;
+    background: rgb(255, 255, 255);
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.hoverProduct:hover+.inProduct {
+    display: block;
+}
+
+.inProduct:hover {
+    display: block;
+}
+.select:hover
+{
+    text-decoration: none;
+    color: black;
+}
+.select
+{
+    color: rgb(82, 82, 82);
+    padding-left: 15px;
 }

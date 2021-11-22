@@ -15,9 +15,78 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
+    <div class="header">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="logo_ten">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./img/logoweb.png" alt="logo" style="width:50px;">
+                    </a>
+                    <span class="tenWeb">LibertyElectronics</span>
+                </div>
+                <div class="search">
+                    <form class="form-inline" action="#">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="checkout_login">
+                    <ul class="navbar-nav">
+                        <div class="checkout">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-basket"
+                                        id="icon_checkout"></i></a>
+                            </li>
+                        </div>
+                        <div class="login">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><button type="button"
+                                        class="btn btn-outline-success">Login</button></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="menu">
+            <div class="container" id="ctn_header">
+                <div class="row">
+                    <div class="home">
+                        <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn1">Home</button></a>
+                    </div>
+                    <div class="product">
+                        <div class="hoverProduct">
+                            <a href="#"><button type="button" class="btn btn-dark btn-block"
+                                    id="btn2">Product</button></a>
+                        </div>
+                        <div class="inProduct">
+                            <div class="type">
+                                <strong><i class="fas fa-tv"></i> TV</strong>
+                            </div>
+                            <div class="inType">
+                                <a href="" class="select"><span >View all</span></a> <br>
+                                <a href="" class="select"><span >LG</span></a> <br>
+                                <a href="" class="select"><span >SamSung</span></a> <br>
+                                <a href="" class="select"><span >Panasonic</span></a> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn3">About Us</button></a>
+                    </div>
+                    <div class="contact">
+                        <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn4">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <!-- Footer -->
         <footer class="bg-dark text-center text-white">
