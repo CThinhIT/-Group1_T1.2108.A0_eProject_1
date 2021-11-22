@@ -81,13 +81,31 @@
 .inProduct:hover {
     display: block;
 }
-.select:hover
-{
+
+.select:hover {
     text-decoration: none;
     color: black;
 }
-.select
-{
+
+.select {
     color: rgb(82, 82, 82);
     padding-left: 15px;
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+    background-image: url(../img/icon_common.06102021@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 250px;
+}
+
+.icon-maylanh {
+    background-position: -155px -78px;
+    height: 20px;
+    width: 22px;
 }
