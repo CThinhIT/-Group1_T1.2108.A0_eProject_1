@@ -67,11 +67,12 @@
     display: none;
     position: absolute;
     background: rgb(0, 0, 0);
-    width: 200px;
+    width: 500px;
     border-radius: 4px;
     padding: 10px;
     border: 1px solid #eee;
     text-align: left;
+    z-index: 10;
 }
 
 .hoverProduct:hover+.inProduct {
@@ -84,7 +85,7 @@
 
 .select:hover {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .select {
@@ -118,4 +119,15 @@
     background-position: -130px -78px;
     height: 20px;
     width: 22px;
+}
+.showCate
+{
+    text-align: center;
+}
+.imgCate{
+    padding-top: 30px;
+}
+.categories
+{
+    margin-top: 25px;
 }

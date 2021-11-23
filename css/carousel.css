@@ -1,14 +1,16 @@
-#img1{
+#img1 {
     background-color: rgb(145, 252, 163);
     margin-top: 10px;
 }
+
 .text {
     /* align: left; */
-    margin-top:130px;
+    margin-top: 130px;
     margin-left: 170px;
     /* margin-right: 200px; */
 }
-.text1{
-    margin-top:130px;
+
+.text1 {
+    margin-top: 130px;
     margin-left: 170px;
 }
