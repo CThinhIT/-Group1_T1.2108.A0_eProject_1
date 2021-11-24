@@ -1,16 +1,12 @@
 #img1 {
-    background-color: rgb(145, 252, 163);
+    background-color: #CCCCCC;
     margin-top: 10px;
 }
 
-.text {
-    /* align: left; */
+.textCarousel {
     margin-top: 130px;
-    margin-left: 170px;
-    /* margin-right: 200px; */
+    margin-left: 200px;
 }
-
-.text1 {
-    margin-top: 130px;
-    margin-left: 170px;
+.slide{
+    margin-top: 45px;
 }
