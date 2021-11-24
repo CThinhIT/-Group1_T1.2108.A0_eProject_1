@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>LibertyElectronics</title>
+    <link rel="shortcut icon" href="./img/logoweb.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/header.css" />
@@ -61,7 +63,7 @@
             <div class="container" id="ctn_header">
                 <div class="row">
                     <div class="home">
-                        <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn1">
+                        <a href="./index.html"><button type="button" class="btn btn-dark btn-block" id="btn1">
                                 Home
                             </button></a>
                     </div>
@@ -91,7 +93,7 @@
                                 <a href="" class="select"><span>Panasonic</span></a> <br />
                             </div>
                             <div class="type">
-                                <strong><i class="fas fa-tv"></i> TV</strong>
+                                <strong><i class="icon-tulanh"></i> Fridge</strong>
                             </div>
                             <div class="inType">
                                 <a href="" class="select"><span>View all</span></a> <br />
@@ -111,7 +113,7 @@
                         </div>
                     </div>
                     <div class="about">
-                        <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn3">
+                        <a href="./html/about.html"><button type="button" class="btn btn-dark btn-block" id="btn3">
                                 About Us
                             </button></a>
                     </div>
@@ -130,20 +132,24 @@
         <div class="carousel-inner" id="img1">
             <div class="carousel-item active" data-interval="10000">
                 <img src="./img/11.png" style="width: 400px; height: 500px; float:right" alt="...">
-                <div class="text">
-                    <h2>Who we are</h2>
-                    <p>Liberty Electronics is the company mwhich is about business services , our company work in an
+                <div class="textCarousel ">
+                    <h1 class="wow bounceInUp" data-wow-delay="0.5s">Who we are</h1>
+                    <p class="wow bounceInUp" data-wow-delay="0.7s">Liberty Electronics is the company mwhich is about
+                        business services , our company work in an
                         electronics field ...</p>
-                    <a href="./html/contact.html" class="btn btn-outline-secondary">Read more</a>
+                    <a href="./html/contact.html" class="btn btn-outline-dark wow bounceInLeft"
+                        data-wow-delay="1s">Read more</a>
                 </div>
             </div>
             <div class="carousel-item" data-interval="2000">
                 <img src="./img/580b585b2edbce24c47b29e8.png" style="width: 400px; height: 500px;float:right" alt="...">
-                <div class="text1">
-                    <h2>What we do</h2>
-                    <p>Our Company try to bring back the best user experiences and the best products . We hope to
+                <div class="textCarousel">
+                    <h1 class="wow bounceInUp" data-wow-delay="0.5s">What we do</h1>
+                    <p class="wow bounceInUp" data-wow-delay="0.7s">Our Company try to bring back the best user
+                        experiences and the best products . We hope to
                         bring the electronic industry can improve and take part in developing our Country</p>
-                    <a href="./html/about.html" class="btn btn-outline-secondary">Read more</a>
+                    <a href="./html/about.html" class="btn btn-outline-dark wow bounceInLeft"
+                        data-wow-delay="1s">Read more</a>
                 </div>
             </div>
         </div>
@@ -166,21 +172,30 @@
                 <div class="textCate">
                     <h1>Categories</h1>
                 </div>
-                <div class="row imgCate">
-                    <div class="col-sm-3"><a href=""><img src="./img/tivi.jpg" alt="" width="255px" height="200px"></a>
-                        <a href="" class="btn btn-outline-dark btn-block">View Now</a>
-                    </div>
-                    <div class="col-sm-3"><a href=""><img src="./img/tulanh.png" alt="" width="255px"
-                                height="200px"></a>
-                        <a href="" class="btn btn-outline-dark btn-block">View Now</a>
-                    </div>
-                    <div class="col-sm-3"><a href=""><img src="./img/maylanh.jpg" alt="" width="255px"
-                                height="200px"></a>
-                        <a href="" class="btn btn-outline-dark btn-block">View Now</a>
-                    </div>
-                    <div class="col-sm-3"><a href=""><img src="./img/maygiat.jpg" alt="" width="255px"
-                                height="200px"></a>
-                        <a href="" class="btn btn-outline-dark btn-block">View Now</a>
+                <div data-aos="fade-up">
+                    <div class="row imgCate">
+
+                        <div class="col-sm-3">
+                            <h4>Television</h4><a href=""><img src="./img/tivi.jpg" alt="" width="255px"
+                                    height="200px"></a>
+                            <a href="" class="btn btn-outline-dark btn-block">View Now</a>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h4>Fridge</h4><a href=""><img src="./img/tulanhHome.jpg" alt="" width="255px"
+                                    height="200px"></a>
+                            <a href="" class="btn btn-outline-dark btn-block">View Now</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Air Conditional</h4><a href=""><img src="./img/maylanh.jpg" alt="" width="255px"
+                                    height="200px"></a>
+                            <a href="" class="btn btn-outline-dark btn-block">View Now</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Washing Machine</h4><a href=""><img src="./img/maygiat.jpg" alt="" width="255px"
+                                    height="200px"></a>
+                            <a href="" class="btn btn-outline-dark btn-block">View Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,6 +279,14 @@
             <!-- Copyright -->
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
