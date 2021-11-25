@@ -1,0 +1,52 @@
+.title {
+    margin-left: 620px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.yourName{
+    padding-left: 10.7cm;
+    font-size:20px;
+}
+.yourEmail{
+    padding-left: 11.2cm;
+    font-size:20px;
+}
+.yourFb{
+    padding-top: 50px;
+    padding-left: 18.6cm;
+    font-size:20px;
+}
+.nameCtrl{
+    margin-left: 8cm;
+    width: 8cm;
+    height: 30px;
+    background-color:rgb(175, 225, 241);
+}
+.emailCtrl{
+    margin-left: 8.6cm;
+    width: 8cm;
+    height: 30px;
+    background-color:rgb(175, 225, 241);
+}
+.comment{
+    margin-left: 13cm;
+    width: 14.6cm;
+    height: 3cm;
+}
+.btnSend{
+    margin-left: 19.5cm;
+}
+.cntAdd{
+    margin-left: 18cm;
+    font-weight: bold;
+    font-size:30px;
+}
+.nameCty{
+    margin-left: 18.4cm;
+}
+.address{
+    margin-left: 15.5cm;
+}
+.map{
+    margin-left: 12.5cm;
+}

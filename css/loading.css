@@ -1,0 +1,16 @@
+.load{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: fixed;
+    z-index: 1000000000000;
+    display: block;
+    overflow: hidden;
+}
+.load img{
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    top: 33%;
+    left: 41%;
+}
