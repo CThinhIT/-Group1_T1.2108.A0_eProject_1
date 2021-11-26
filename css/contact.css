@@ -1,3 +1,6 @@
+.body{
+    margin-top: 50px;
+}
 .textBox{
     position: absolute;
     top: 50%;
@@ -36,37 +39,16 @@
     height: 830px;
 }
 .title{
-   /* margin-left: 620px; */
+   margin-top: 40px;
    text-align: center;
    font-size: 30px;
    font-weight: bold; 
-} 
-.yourName{
-    /* padding-left: 10.7cm; */
-    text-align: center;
-    font-size:20px;
 }
-.yourEmail{
-    /* padding-left: 11.2cm; */
-    text-align: center;
-    font-size:20px;
+.row{
+    margin-top: 40px;
 }
 .yourFb{
-     padding-top: 45px; 
-     padding-left: 18.6cm;
-     font-size:20px;
-}
-.nameCtrl{
-    /* margin-left: 8cm; */
-    width: 8cm;
-    height: 30px;
-    background-color:rgb(175, 225, 241);
-}
-.emailCtrl{
-    /* margin-left: 8.6cm; */
-    width: 8cm;
-    height: 30px;
-    background-color:rgb(175, 225, 241);
+     margin-top: 40px;
 }
 h3
 {
@@ -85,4 +67,5 @@ h3
 }
 .contact-add{
     text-align: center;
+    margin-top: 40px;
 }
