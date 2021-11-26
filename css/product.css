@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+.titleNew {
+    text-align: center;
+}
+
+.chuNewProduct {
+    margin-top: 75px;
+}
+
+.spNew {
+    margin-top: 30px;
+}
+
+.view-buyProduct {
+    float: right;
+}
+.name-price
+{
+    color:slategrey;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
