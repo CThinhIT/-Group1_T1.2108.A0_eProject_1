@@ -1,29 +1,69 @@
-.title {
-    margin-left: 620px;
-    font-size: 30px;
-    font-weight: bold;
+.textBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+.headingPrimary{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.headingMain{
+    font-size: 31px;
+    letter-spacing: 4px;
+    display: block;
+    text-shadow: 2px 2px 0px black;
+}
+.headingSub{
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: block;
+    text-shadow: 2px 2px 0px black;
+}
+.video{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+#myVideo{
+    position: relative;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    height: 830px;
+}
+.title{
+   /* margin-left: 620px; */
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold; 
+} 
 .yourName{
-    padding-left: 10.7cm;
+    /* padding-left: 10.7cm; */
+    text-align: center;
     font-size:20px;
 }
 .yourEmail{
-    padding-left: 11.2cm;
+    /* padding-left: 11.2cm; */
+    text-align: center;
     font-size:20px;
 }
 .yourFb{
-    padding-top: 50px;
-    padding-left: 18.6cm;
-    font-size:20px;
+     padding-top: 45px; 
+     padding-left: 18.6cm;
+     font-size:20px;
 }
 .nameCtrl{
-    margin-left: 8cm;
+    /* margin-left: 8cm; */
     width: 8cm;
     height: 30px;
     background-color:rgb(175, 225, 241);
 }
 .emailCtrl{
-    margin-left: 8.6cm;
+    /* margin-left: 8.6cm; */
     width: 8cm;
     height: 30px;
     background-color:rgb(175, 225, 241);
@@ -33,13 +73,13 @@
     width: 14.6cm;
     height: 3cm;
 }
-.btnSend{
-    margin-left: 19.5cm;
-}
 .cntAdd{
     margin-left: 18cm;
     font-weight: bold;
     font-size:30px;
+}
+.btnSend{
+    margin-left: 19.4cm;
 }
 .nameCty{
     margin-left: 18.4cm;
