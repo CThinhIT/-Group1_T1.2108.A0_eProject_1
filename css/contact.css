@@ -68,25 +68,21 @@
     height: 30px;
     background-color:rgb(175, 225, 241);
 }
+h3
+{
+    text-align: center;
+}
 .comment{
-    margin-left: 13cm;
-    width: 14.6cm;
-    height: 3cm;
+    width: 600px;
+    height: 200px;
 }
-.cntAdd{
-    margin-left: 18cm;
-    font-weight: bold;
-    font-size:30px;
+.commentContact{
+    text-align: center;
 }
-.btnSend{
-    margin-left: 19.4cm;
+.sendContact
+{
+    text-align: center;
 }
-.nameCty{
-    margin-left: 18.4cm;
-}
-.address{
-    margin-left: 15.5cm;
-}
-.map{
-    margin-left: 12.5cm;
+.contact-add{
+    text-align: center;
 }
