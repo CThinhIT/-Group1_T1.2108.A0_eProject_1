@@ -1,0 +1,13 @@
+.titleCheckout{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; 
+}
+.content{
+    background-color: rgb(230, 221, 173);
+    margin-top: 50px;
+}
+.products{
+    margin-left: 340px;
+}
