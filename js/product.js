@@ -344,3 +344,4 @@ function showDetail(pDetail) {
     $('.detailProduct').html(s);
 }
 showDetail(productS);
+
