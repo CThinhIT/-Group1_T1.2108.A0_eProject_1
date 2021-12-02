@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../css/product.css">
 </head>
 
-<body>
+<body >
     <div class="header">
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -70,7 +70,8 @@
                     </div>
                     <div class="product">
                         <div class="hoverProduct">
-                            <a href="../html/product.html"><button type="button" class="btn btn-dark btn-block" id="btn2">
+                            <a href="../html/product.html"><button type="button" class="btn btn-dark btn-block"
+                                    id="btn2">
                                     Product
                                 </button></a>
                         </div>
@@ -129,11 +130,11 @@
     </div>
 
     <!--view detail-->
-    <div id="detailProduct">
-        <div class="container">
-            <div class="row">
+    <div class="detailProduct">
+        <!-- <div class="container">
+            <div class="row"> -->
                 <!--IMG product-->
-                <div class="col-7">
+                <!-- <div class="col-7">
                     <div class="tab-content">
                         <div id="pic1" class="container tab-pane active"><br>
                             <img src="../asset/imgProduct/TV/tvSS/tvSS1/1.jpg" alt="" class="imgDetail">
@@ -173,9 +174,9 @@
                                     src="../asset/imgProduct/TV/tvSS/tvSS1/5.jpg" alt="" width="80px" height="50px"></a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
                 <!--Thong tin product-->
-                <div class="col-5">
+                <!-- <div class="col-5">
                     <div class="gioithieuSP">
                         <div class="tenSP">
                             <h2>Samsung Smart TV QLED QA98QN90A</h2>
@@ -200,9 +201,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-
+    <div class="detailProduct1"></div>
     <!--View review-->
     <div class="reviewSp">
         <h1>Some Reviews</h1>
@@ -311,6 +312,7 @@
     <script src="../js/animate.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/product.js"></script>
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
@@ -322,6 +324,7 @@
             autoplayHoverPause: true
         });
     </script>
+    
 </body>
 
 </html>

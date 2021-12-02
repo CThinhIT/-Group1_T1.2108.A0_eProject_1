@@ -163,10 +163,10 @@
                                     <p>LG Inverter 601 liter refrigerator</p>
                                     <p class="price">Price: $2.027,86</p>
                                 </strong>
-                                <a href="" class="btn btn-secondary wow fadeInLeftBig">View Now</a>
+                                <a href="../productDetail/detail.html?key=1" class="btn btn-secondary wow fadeInLeftBig">View Now</a>
                                 <a href="" class="btn btn-secondary wow fadeInRightBig">Buy Now</a>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="carousel-item ">
                         <img src="../asset/img/may-giat-lg-inverter-9-kg-fm1209n6w-thiet-ke-sang-trong.png" alt="Los Angeles"
@@ -200,8 +200,8 @@
             <div class="chuNewProduct">
                 <h2 class="titleNew wow bounceInDown">Featured Products</h2>
             </div>
-            <div class="owl-carousel carousel spNoibat">
-                <div class="featuredP1">
+            <div class="owl-carousel carousel spNoibat" id="spNoibat">
+                <!-- <div class="featuredP1">
                     <div class="imgFP1">
                         <a href=""><img src="../asset/img/maygiat.jpg" alt="" loading="lazy">
                     </div>
@@ -239,7 +239,7 @@
                             <div class="col-sm-6"><a href="" class="btn btn-lg">Buy</a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -250,10 +250,10 @@
             <div class="chuNewProduct">
                 <h2 class="titleNew wow bounceInDown">Best Seller</h2>
             </div>
-            <div class="owl-carousel carousel spNoibat">
-                <div class="featuredP1">
+            <div class="owl-carousel carousel sanphambanchay" id="sanphambanchay">
+                <!-- <div class="featuredP1">
                     <div class="imgFP1">
-                        <a href=""><img src="../asset/img/maygiat.jpg" alt="" loading="lazy">
+                        <a href=""><img src="../asset/imgProduct/MG/mgLG/mgLG1/1.jpg" alt="" loading="lazy" width="300px" height="200px">
                     </div>
                     <div class="compare-buyFP">
                         <div class="row">
@@ -263,8 +263,8 @@
                             <div class="col-sm-6"><a href="" class="btn btn-lg btn-block">Buy</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="featuredP1">
+                </div> -->
+                <!-- <div class="featuredP1">
                     <div class="imgFP1">
                         <a href=""><img src="../asset/img/maygiat.jpg" alt="" loading="lazy">
                     </div>
@@ -276,8 +276,8 @@
                             <div class="col-sm-6"><a href="" class="btn btn-lg">Buy</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="featuredP1">
+                </div> -->
+                <!-- <div class="featuredP1">
                     <div class="imgFP1">
                         <a href=""><img src="../asset/img/maygiat.jpg" alt="" loading="lazy">
                     </div>
@@ -289,7 +289,7 @@
                             <div class="col-sm-6"><a href="" class="btn btn-lg">Buy</a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -379,6 +379,7 @@
     <script src="../js/animate.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/product.js"></script>
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
@@ -386,10 +387,11 @@
             loop: true,
             margin: 30,
             autoplay: true,
-            autoplayTimeout: 1500,
+            autoplayTimeout: 2000,
             autoplayHoverPause: true
         });
     </script>
+    
 </body>
 
 </html>
