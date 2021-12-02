@@ -1,0 +1,69 @@
+:root {
+    --bg1:#4F4F4F;
+    --bg2:#9C9C9C;
+    --text:#1C1C1C;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: block;
+}
+a{
+    color:black;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, var(--bg2),var(--bg1), var(--text));
+}
+form{
+    background:linear-gradient(to bottom right, var(--text),var(--bg1), var(--bg2));  
+    border: 1px solid black;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top: 70px;
+}
+.form-login {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.form-login h2{
+    margin-bottom: 10px;
+}
+.form-text {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-text input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top:10px;
+}
+.form-text label {
+    font-size:20px;
+    color:black;
+}
+.form-login button {
+    height:35px;
+    width:100%;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, var(--bg2),var(--bg1), var(--text));
+
+}
+.invalid-feedback {
+    color:black;
+    font-size:15px;
+}
+p{
+    font-size:20px;
+    color: black;
+}
+

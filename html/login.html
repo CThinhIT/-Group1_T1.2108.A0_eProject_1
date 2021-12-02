@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="../css/login.css">
+<body>
+    <div class="container">
+        <form action="../index.html" class="form-login validation" novalidate>
+            <div class="header">
+                <img src="../asset/img/logoweb.png" alt="" style="width:70px">
+                <p>LibertyElectronics</p>
+            </div>
+            <div class="body">
+                <h2>Sign up</h2>
+                <div class="form-text">
+                    <label>Username or Email:</label>
+                    <input type="text" class="form-control" id="username" required>
+                    <div class="invalid-feedback">
+                        Please fill in this field.
+                    </div>
+                </div>
+                <div class="form-text">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" id="password" required>
+                    <div class="invalid-feedback">
+                        Please fill in this field.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                <span>You don't have any account?</span>
+                <a href="../html/register.html">Create account now</a>
+            </div>
+        </form>
+    </div>
+    <script>
+       (function () {
+        'use strict'
+    
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.validation')
+    
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }else{
+                event.preventDefault()
+                Swal.fire({
+                    title: 'Welcome!' + id,
+                    showConfirmButton: true,
+                    timer: 2000,
+                    timerProgressBar: true
+                })
+            }
+            form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+    </script>
+</body>
+</html>
