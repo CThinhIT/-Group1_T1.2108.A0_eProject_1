@@ -6,8 +6,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/MG/mgLG/mgLG1/2.jpg",
     "pic3": "../asset/imgProduct/MG/mgLG/mgLG1/3.jpg",
     "pic4": "../asset/imgProduct/MG/mgLG/mgLG1/4.jpg",
-    "pic5": "../asset/imgProduct/MG/mgLG/mgLG1/5.jpg",
-    "pic6": "../asset/imgProduct/MG/mgLG/mgLG1/6.jpg"
+    "pic5": "../asset/imgProduct/MG/mgLG/mgLG1/5.jpg"
 }, {
     "name": "Air-conditioner LG Inverter 1.5 HPV13ENH",
     "id": "02",
@@ -16,8 +15,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/ML/mlLG/mlLG1/2.jpg",
     "pic3": "../asset/imgProduct/ML/mlLG/mlLG1/3.jpg",
     "pic4": "../asset/imgProduct/ML/mlLG/mlLG1/4.jpg",
-    "pic5": "../asset/imgProduct/ML/mlLG/mlLG1/5.jpg",
-    "pic6": "../asset/imgProduct/ML/mlLG/mlLG1/6.jpg"
+    "pic5": "../asset/imgProduct/ML/mlLG/mlLG1/5.jpg"
 }, {
     "name": "Fridge LG Inverter 394 liter GN-D392BLA",
     "id": "03",
@@ -26,8 +24,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/TL/tlLG/tlLG1/2.jpg",
     "pic3": "../asset/imgProduct/TL/tlLG/tlLG1/3.jpg",
     "pic4": "../asset/imgProduct/TL/tlLG/tlLG1/4.jpg",
-    "pic5": "../asset/imgProduct/TL/tlLG/tlLG1/5.jpg",
-    "pic6": "../asset/imgProduct/TL/tlLG/tlLG1/6.jpg"
+    "pic5": "../asset/imgProduct/TL/tlLG/tlLG1/5.jpg"
 
 }, {
     "name": "Smart Television OLED LG 4K 65 inch 65B1PTA",
@@ -37,8 +34,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/TV/tvLG/tvLG1/2.jpg",
     "pic3": "../asset/imgProduct/TV/tvLG/tvLG1/3.jpg",
     "pic4": "../asset/imgProduct/TV/tvLG/tvLG1/4.jpg",
-    "pic5": "../asset/imgProduct/TV/tvLG/tvLG1/5.jpg",
-    "pic6": "../asset/imgProduct/TV/tvLG/tvLG1/6.jpg"
+    "pic5": "../asset/imgProduct/TV/tvLG/tvLG1/5.jpg"
 }, {
     "name": "Washing machine Inverter 9kh FM1209N6W",
     "id": "05",
@@ -47,8 +43,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/MG/mgLG/mgLG2/2.jpg",
     "pic3": "../asset/imgProduct/MG/mgLG/mgLG2/3.jpg",
     "pic4": "../asset/imgProduct/MG/mgLG/mgLG2/4.jpg",
-    "pic5": "../asset/imgProduct/MG/mgLG/mgLG2/5.jpg",
-    "pic6": "../asset/imgProduct/MG/mgLG/mgLG2/6.jpg"
+    "pic5": "../asset/imgProduct/MG/mgLG/mgLG2/5.jpg"
 }, {
     "name": "Fridge LG Inverter 494 liter GR-D22MB",
     "id": "06",
@@ -57,8 +52,7 @@ var productS = [{
     "pic2": "../asset/imgProduct/TL/tlLG/tlLG3/2.jpg",
     "pic3": "../asset/imgProduct/TL/tlLG/tlLG3/3.jpg",
     "pic4": "../asset/imgProduct/TL/tlLG/tlLG3/4.jpg",
-    "pic5": "../asset/imgProduct/TL/tlLG/tlLG3/5.jpg",
-    "pic6": "../asset/imgProduct/TL/tlLG/tlLG3/6.jpg"
+    "pic5": "../asset/imgProduct/TL/tlLG/tlLG3/5.jpg"
 }];
 
 var productF = [{
@@ -69,8 +63,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/MG/mgPa/mgPa1/2.jpg",
     "pic3": "../asset/imgProduct/MG/mgPa/mgPa1/3.jpg",
     "pic4": "../asset/imgProduct/MG/mgPa/mgPa1/4.jpg",
-    "pic5": "../asset/imgProduct/MG/mgPa/mgPa1/5.jpg",
-    "pic6": "../asset/imgProduct/MG/mgPa/mgPa1/6.jpg"
+    "pic5": "../asset/imgProduct/MG/mgPa/mgPa1/5.jpg"
 }, {
     "name": "Air-conditioner LG Inverter 1.5 HPV13ENH",
     "id": "08",
@@ -79,8 +72,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/ML/mlSS/mlSS1/2.jpg",
     "pic3": "../asset/imgProduct/ML/mlSS/mlSS1/3.jpg",
     "pic4": "../asset/imgProduct/ML/mlSS/mlSS1/4.jpg",
-    "pic5": "../asset/imgProduct/ML/mlSS/mlSS1/5.jpg",
-    "pic6": "../asset/imgProduct/ML/mlSS/mlSS1/6.jpg"
+    "pic5": "../asset/imgProduct/ML/mlSS/mlSS1/5.jpg"
 }, {
     "name": "Fridge LG Inverter 394 liter GN-D392BLA",
     "id": "09",
@@ -89,8 +81,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/TL/tlSS/tlSS1/2.jpg",
     "pic3": "../asset/imgProduct/TL/tlSS/tlSS1/3.jpg",
     "pic4": "../asset/imgProduct/TL/tlSS/tlSS1/4.jpg",
-    "pic5": "../asset/imgProduct/TL/tlSS/tlSS1/5.jpg",
-    "pic6": "../asset/imgProduct/TL/tlSS/tlSS1/6.jpg"
+    "pic5": "../asset/imgProduct/TL/tlSS/tlSS1/5.jpg"
 
 }, {
     "name": "Smart Television OLED LG 4K 65 inch 65B1PTA",
@@ -100,8 +91,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/TV/tvLG/tvLG3/2.jpg",
     "pic3": "../asset/imgProduct/TV/tvLG/tvLG3/3.jpg",
     "pic4": "../asset/imgProduct/TV/tvLG/tvLG3/4.jpg",
-    "pic5": "../asset/imgProduct/TV/tvLG/tvLG3/5.jpg",
-    "pic6": "../asset/imgProduct/TV/tvLG/tvLG3/6.jpg"
+    "pic5": "../asset/imgProduct/TV/tvLG/tvLG3/5.jpg"
 }, {
     "name": "Washing machine Inverter 9kh FM1209N6W",
     "id": "11",
@@ -110,8 +100,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/MG/mgLG/mgLG2/2.jpg",
     "pic3": "../asset/imgProduct/MG/mgLG/mgLG2/3.jpg",
     "pic4": "../asset/imgProduct/MG/mgLG/mgLG2/4.jpg",
-    "pic5": "../asset/imgProduct/MG/mgLG/mgLG2/5.jpg",
-    "pic6": "../asset/imgProduct/MG/mgLG/mgLG2/6.jpg"
+    "pic5": "../asset/imgProduct/MG/mgLG/mgLG2/5.jpg"
 }, {
     "name": "Fridge LG Inverter 494 liter GR-D22MB",
     "id": "12",
@@ -120,8 +109,7 @@ var productF = [{
     "pic2": "../asset/imgProduct/TL/tlLG/tlLG3/2.jpg",
     "pic3": "../asset/imgProduct/TL/tlLG/tlLG3/3.jpg",
     "pic4": "../asset/imgProduct/TL/tlLG/tlLG3/4.jpg",
-    "pic5": "../asset/imgProduct/TL/tlLG/tlLG3/5.jpg",
-    "pic6": "../asset/imgProduct/TL/tlLG/tlLG3/6.jpg"
+    "pic5": "../asset/imgProduct/TL/tlLG/tlLG3/5.jpg"
 }];
 
 var res = '';
@@ -344,4 +332,3 @@ function showDetail(pDetail) {
     $('.detailProduct').html(s);
 }
 showDetail(productS);
-
