@@ -1,339 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LibertyElectronics</title>
-    <link rel="shortcut icon" href="./asset/img/logoweb.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/animate.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-</head>
-    <style>
-        .myInput{
-            border-top: 0px;
-            border-left: 0px;
-            border-right: 0px;
-        }
-        .label{
-            font-weight:bold;
-        }
-        .registerForm{
-            display: inline-block;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    </style>
-<body>
-    <div class="header">
-        <header>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-                <div class="logo_ten">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../asset/img/logoweb.png" alt="logo" style="width: 50px" />
-                    </a>
-                    <span class="tenWeb">LibertyElectronics</span>
-                </div>
-                <div class="search">
-                    <form class="form-inline" action="#">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-                        <button class="btn btn-success" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="checkout_login">
-                    <ul class="navbar-nav">
-                        <div class="checkout">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-shopping-basket"
-                                        id="icon_checkout"></i></a>
-                            </li>
-                        </div>
-                        <div class="login">
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.html"><button type="button" class="btn btn-outline-success">
-                                        Login
-                                    </button></a>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="menu">
-            <div class="container" id="ctn_header">
-                <div class="row">
-                    <div class="home">
-                        <a href="../index.html"><button type="button" class="btn btn-dark btn-block" id="btn1">
-                                Home
-                            </button></a>
-                    </div>
-                    <div class="product">
-                        <div class="hoverProduct">
-                            <a href="#"><button type="button" class="btn btn-dark btn-block" id="btn2">
-                                    Product
-                                </button></a>
-                        </div>
-                        <div class="inProduct">
-                            <div class="type">
-                                <strong><i class="fas fa-tv"></i> TV</strong>
-                            </div>
-                            <div class="inType">
-                                <a href="" class="select"><span>View all</span></a> <br />
-                                <a href="" class="select"><span>LG</span></a> <br />
-                                <a href="" class="select"><span>SamSung</span></a> <br />
-                                <a href="" class="select"><span>Panasonic</span></a> <br />
-                            </div>
-                            <div class="type">
-                                <strong><i class="icon-maylanh"></i> Air Conditioner</strong>
-                            </div>
-                            <div class="inType">
-                                <a href="" class="select"><span>View all</span></a> <br />
-                                <a href="" class="select"><span>LG</span></a> <br />
-                                <a href="" class="select"><span>SamSung</span></a> <br />
-                                <a href="" class="select"><span>Panasonic</span></a> <br />
-                            </div>
-                            <div class="type">
-                                <strong><i class="icon-tulanh"></i> Fridge</strong>
-                            </div>
-                            <div class="inType">
-                                <a href="" class="select"><span>View all</span></a> <br />
-                                <a href="" class="select"><span>LG</span></a> <br />
-                                <a href="" class="select"><span>SamSung</span></a> <br />
-                                <a href="" class="select"><span>Panasonic</span></a> <br />
-                            </div>
-                            <div class="type">
-                                <strong><i class="icon-maygiat"></i> Washing Machine</strong>
-                            </div>
-                            <div class="inType">
-                                <a href="" class="select"><span>View all</span></a> <br>
-                                <a href="" class="select"><span>LG</span></a> <br>
-                                <a href="" class="select"><span>SamSung</span></a> <br>
-                                <a href="" class="select"><span>Panasonic</span></a> <br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about">
-                        <a href="../html/about.html"><button type="button" class="btn btn-dark btn-block" id="btn3">
-                                About Us
-                            </button></a>
-                    </div>
-                    <div class="contact">
-                        <a href="../html/contact.html"><button type="button" class="btn btn-dark btn-block" id="btn4">
-                                Contact
-                            </button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br> <br> <br>
-    <!-- register -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link rel="shortcut icon" href="./asset/img/logoweb.png"> -->
+    <link rel="stylesheet" href="../css/register.css" />
+    <title>Title</title>
+  </head>
+  <body>
     <div class="container col-4 registerForm">
+      <form
+        class="row g-3 needs-validation"
+        novalidate
+        oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'
+      >
         <h2>Create your account here</h2>
-        <form class="row g-3 needs-validation" novalidate oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
-            <div class="col-md-10">
-              <label for="validationCustom01" class="form-label label">First name</label>
-              <input type="text" class="form-control myInput" id="validationCustom01" placeholder="First name"required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
+        <div class="col-md-10">
+          <label for="validationCustom01" class="form-label label"
+            >First name</label
+          >
+          <input
+            type="text"
+            class="form-control myInput"
+            id="validationCustom01"
+            placeholder="First name"
+            required
+          />
+          <div class="invalid-feedback">Please enter your first name</div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustom02" class="form-label label"
+            >Last name</label
+          >
+          <input
+            type="text"
+            class="form-control myInput"
+            id="validationCustom02"
+            placeholder="Last name"
+            required
+          />
+          <div class="invalid-feedback">This field is empty</div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustomUsername" class="form-label label"
+            >Username</label
+          >
+          <div class="input-group has-validation">
+            <input
+              type="text"
+              class="form-control myInput"
+              id="validationCustomUsername"
+              aria-describedby="inputGroupPrepend"
+              placeholder="Username"
+              required
+            />
+            <div class="invalid-feedback">Please enter a username</div>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustom03" class="form-label label"
+            >Passwords</label
+          >
+          <input
+            type="password"
+            class="form-control myInput"
+            id="validationCustom03"
+            name="up"
+            placeholder="Passwords"
+            required
+          />
+          <div class="invalid-feedback">Please fill in this field.</div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustom03" class="form-label label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            class="form-control myInput"
+            id="validationCustom03"
+            name="up2"
+            placeholder="Confirm Password"
+            required
+          />
+          <div class="invalid-feedback">Please fill in this field.</div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustom03" class="form-label label">Email</label>
+          <input
+            type="text"
+            class="form-control myInput"
+            id="validationCustom03"
+            placeholder="Email"
+            required
+          />
+          <div class="invalid-feedback">Please fill in this field.</div>
+        </div>
+        <div class="col-md-10">
+          <label for="validationCustom04" class="form-label label"
+            >Phone Number</label
+          >
+          <input
+            type="text"
+            class="form-control myInput"
+            id="validationCustom04"
+            placeholder="Phone number"
+            required
+          />
+          <div class="invalid-feedback">Please enter a valid phone number.</div>
+        </div>
+        <div class="col-md-7">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
             </div>
-            <div class="col-md-10">
-              <label for="validationCustom02" class="form-label label">Last name</label>
-              <input type="text" class="form-control myInput" id="validationCustom02" placeholder="Last name" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-10">
-              <label for="validationCustomUsername" class="form-label label">Username</label>
-              <div class="input-group has-validation">
-                <input type="text" class="form-control myInput" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Username" required>
-                <div class="invalid-feedback">
-                  Please choose a username.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-10">
-              <label for="validationCustom03" class="form-label label">Passwords</label>
-              <input type="password" class="form-control myInput" id="validationCustom03" name="up" placeholder="Passwords" required>
-              <div class="invalid-feedback">
-                Please fill in this field.
-              </div>
-            </div>
-            <div class="col-md-10">
-              <label for="validationCustom03" class="form-label label">Confirm Password</label>
-              <input type="password" class="form-control myInput" id="validationCustom03" name="up2" placeholder="Confirm Password" required>
-              <div class="invalid-feedback">
-                Please fill in this field.
-              </div>
-            </div>
-            <div class="col-md-10">
-              <label for="validationCustom03" class="form-label label">Email</label>
-              <input type="text" class="form-control myInput" id="validationCustom03" placeholder="Email" required>
-              <div class="invalid-feedback">
-                Please fill in this field.
-              </div>
-            </div>
-            <div class="col-md-10">
-              <label for="validationCustom04" class="form-label label">Phone Number</label>
-              <input type="text" class="form-control myInput" id="validationCustom04" placeholder="Phone number" required>
-              <div class="invalid-feedback">
-                Please select a valid state.
-            </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </div>
-    
-    <div class="footer">
-        <!-- Footer -->
-        <footer class="bg-dark text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-facebook-f"></i></a>
-
-                    <!-- Twitter -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-twitter"></i></a>
-
-                    <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="mailto:congthinh.0311@gmail.com"
-                        role="button"><i class="fab fa-google"></i></a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-instagram"></i></a>
-
-                    <!-- Github -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fab fa-github"></i></a>
-                </section>
-                <!-- Section: Social media -->
-
-                <!-- Section: Form -->
-                <section class="">
-                    <form action="">
-                        <!--Grid row-->
-                        <div class="row d-flex justify-content-center">
-                            <!--Grid column-->
-                            <div class="col-auto">
-                                <p class="pt-2">
-                                    <strong>Sign up for our newsletter</strong>
-                                </p>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-5 col-12">
-                                <!-- Email input -->
-                                <div class="form-outline form-white mb-4">
-                                    <input type="email" id="form5Example21" class="form-control" />
-                                    <!-- <label class="form-label" for="form5Example21">Email address</label> -->
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <!-- Submit button -->
-                                <button type="submit" class="btn btn-outline-light mb-4">
-                                    Subscribe
-                                </button>
-                            </div>
-                            <!--Grid column-->
-                        </div>
-                        <!--Grid row-->
-                    </form>
-                </section>
-                <!-- Section: Form -->
-
-                <!-- Section: Text -->
-                <section class="mb-4">
-                    <p>Hotline: 210.820.03</p>
-                    <p>Address: 590 CMT8, Ward 11, District 3, Ho Chi Minh City.</p>
-                </section>
-            </div>
-            <!-- Grid container -->
-
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2021 Copyright: Developed by group 1, class T1.2108.A0
-            </div>
-            <!-- Copyright -->
-        </footer>
+    <div class="container footer">
+      <section class="mb-4">
+        <p>Hotline: 210.820.03</p>
+        <p>Address: 590 CMT8, Ward 11, District 3, Ho Chi Minh City.</p>
+      </section>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright: Developed by group 1, class T1.2108.A0
+      </div>
     </div>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/wow.min.js"></script> -->
-    <!-- <script src="sweetalert2.all.min.js"></script> -->
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css" />
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-        'use strict'
-    
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-    
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }else{
-                event.preventDefault()
-                Swal.fire({
-                    title: 'Congratulations, you have registered successfully !',
-                    showConfirmButton: true,
-                    timer: 2000,
-                    timerProgressBar: true
-                }).then(function (){
-                    window.location.href="../index.html"
-                })
-            }
-            form.classList.add('was-validated')
-            }, false)
-        })
-    })()
-    </script>
-    <!-- <script>
-        new WOW().init();
-    </script>
-    <script>
-        AOS.init();
-    </script> -->
-    
-</body>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
 
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                event.preventDefault();
+                Swal.fire({
+                  icon: "success",
+                  title: "Congratulations, you have registered successfully !",
+                  showConfirmButton: true,
+                  timer: 2000,
+                  timerProgressBar: true,
+                }).then(function () {
+                  window.location.href = "../index.html";
+                });
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
 </html>
