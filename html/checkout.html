@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/shopingcart.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -29,6 +30,8 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
+    <link rel="stylesheet" href="../css/shopingcart.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
   </head>
 
   <body>
@@ -159,11 +162,14 @@
       </div>
     </div>
 
-    <!--form checkout-->
+    
     <div class="bodyCheckout">
       <div class="container">
         <div class="titleCheckout">Check Out</div>
+         <!--form checkout-->
+        <form onsubmit="alert('Congratulations on your successful order.');return false;" class="was-validated">
         <div class="contentCheckout row">
+            
           <h4 class="productsCheckout col-sm-4">Products model X:</h4>
           <div><input type="number" class="numberCheckout" /></div>
           <button class="btn btn-dark btnTrash">
@@ -174,36 +180,83 @@
           </div>
           <div class="col-sm-6 payCheckout">
             <h5 class="payAdd-Me">Payment address</h5>
-            <h6 class="contentPay">Full Name</h6>
-            <input type="text" class="form-control textCheckout" />
-            <h6 class="contentPay">Phone Number</h6>
-            <input type="text" class="form-control textCheckout" />
-            <h6 class="contentPay">City</h6>
-            <input type="text" class="form-control textCheckout" />
-            <h6 class="contentPay">Address</h6>
-            <input type="text" class="form-control textCheckout" />
+            <div class="form-group">
+                <label class="contentPay"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" class="form-control"
+                    placeholder="Ex: Johnny Dang" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fa fa-envelope"></i> Phone number</label>
+                <input type="text" id="phone" name="phone" class="form-control"
+                    placeholder="Ex: 0908765432" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fas fa-city"></i> City</label>
+                <input type="text" id="city" name="city" class="form-control" placeholder="Ex: Ho Chi Minh city"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fas fa-address-card"></i> Address</label>
+                <input type="text" id="adr" name="address" class="form-control"
+                    placeholder="Ex: Orange county" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
           </div>
           <div class="col-sm-6 payCheckout">
             <h5 class="payAdd-Me">Payment method</h5>
-            <h6 class="contentPay">Select Cards</h6>
+            <label class="contentPay">Select Cards</label>
             <div class="credit-cart">
-              <button class="btn"><i class="far fa-credit-card"></i></button
-              ><button class="btn"><i class="far fa-credit-card"></i></button
-              ><button class="btn"><i class="far fa-credit-card"></i></button
-              ><button class="btn"><i class="far fa-credit-card"></i></button>
+              <button class="btn cartCheckout"><i class="fab fa-cc-visa" style="color:navy;"></i></button
+              ><button class="btn cartCheckout"><i class="fab fa-cc-amex" style="color:blue"></i></button
+              ><button class="btn cartCheckout"><i class="fab fa-cc-mastercard" style="color:red"></i></button
+              ><button class="btn cartCheckout"><i class="fab fa-cc-discover" style="color: orange;"></i></button>
             </div>
-            <h6 class="contentPay">Credit card number</h6>
-            <input type="text" class="form-control textCheckout" />
-            <h6 class="contentPay">Exp Month</h6>
-            <input type="text" class="form-control textCheckout" />
+            
+            <div class="form-group">
+                <label class="contentPay">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" class="form-control"
+                    placeholder="1111-2222-3333-4444" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            
+            <div class="form-group">
+                <label class="contentPay">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" class="form-control"
+                    placeholder="Ex: December" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            
             <div class="row expyear-cvv">
               <div class="col-sm-6">
-                <h6 class="contentPay">Exp Year</h6>
-                <input type="text" class="form-control" />
+                <div class="form-group">
+                    <label class="contentPay">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" class="form-control"
+                        placeholder="Ex: 2021" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
               </div>
               <div class="col-sm-6">
-                <h6 class="contentPay">CVV</h6>
-                <input type="text" class="form-control" />
+                <div class="form-group">
+                    <label class="contentPay">CVV</label>
+                    <input type="text" id="cvv" name="cvv" class="form-control"
+                        placeholder="xxx" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -212,10 +265,9 @@
             <div class="commentCheckout">
               <textarea class="notesCheckout"></textarea>
             </div>
-            <button type="button" class="btn btn-primary sendOrder">
-              Send Order
-            </button>
+            <input type="submit" value="Send order" class="btn btn-warning sendOrder">
           </div>
+        </form>
         </div>
       </div>
     </div>
