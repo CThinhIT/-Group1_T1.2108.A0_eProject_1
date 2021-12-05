@@ -48,3 +48,17 @@
     width: 250px;
     height: 250px;
 }
+.imgProductA
+{
+    width: 360px;
+    height: 250px;
+    padding: 20px;
+}
+h6
+{
+    text-align: center;
+}
+.videoProduct
+{
+    margin-top: 10px;
+}
