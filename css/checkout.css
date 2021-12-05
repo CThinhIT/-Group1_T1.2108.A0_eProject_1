@@ -57,6 +57,12 @@
 .credit-cart {
   text-align: left;
 }
+.cartCheckout{
+    padding: 2px 0;
+    margin-bottom: 20px;
+    width: 50px;
+    font-size: 24px;
+}
 .contentPay {
   margin-top: 39px;
 }
@@ -76,4 +82,5 @@
 }
 .sendOrder{
   margin-top: 21px;
+  margin-bottom: 70px;
 }

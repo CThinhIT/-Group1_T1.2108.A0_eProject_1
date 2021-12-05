@@ -1,0 +1,38 @@
+.show-cart li {
+    display: flex;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+.fa-shopping-cart .total-count {
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    font-size: x-small;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.review-cart, .user-info {
+    background-color: white;
+}
+
+div.input-group {
+    flex-wrap: nowrap;
+}
+
+.minus-item, .plus-item {
+    width: 15px;
+    border-radius: 0;
+}
+
+.input-group>.form-control {
+    min-width: 50px;
+}
+
