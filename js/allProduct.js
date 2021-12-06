@@ -487,7 +487,7 @@ var productMG = [{
         "pic5": "../asset/imgProduct/MG/mgPa/mgPa2/5.jpg"
     },
     {
-        "name": "Washing Machine Samsung Inverter 9.5 KG WW95T4040CESV",
+        "name": "Washing Machine Panasonic Inverter 1O KG NA-V10FX1LVT",
         "id": "03",
         "brand": "c",
         "price": 1000,
@@ -498,7 +498,7 @@ var productMG = [{
         "pic5": "../asset/imgProduct/MG/mgPa/mgPa3/5.jpg"
     },
     {
-        "name": "Washing Machine Samsung Inverter 9.5 KG WW95T4040CESV",
+        "name": "Washing Machine Panasonic Inverter 10.5 KG NA-V105FX2BV",
         "id": "04",
         "brand": "c",
         "price": 1000,
@@ -509,7 +509,7 @@ var productMG = [{
         "pic5": "../asset/imgProduct/MG/mgPa/mgPa4/5.jpg"
     },
     {
-        "name": "Washing Machine Samsung Inverter 9.5 KG WW95T4040CESV",
+        "name": "Washing Machine Panasonic Inverter 10.5 KG NA-FD10AR1BV",
         "id": "05",
         "brand": "c",
         "price": 1000,
@@ -520,7 +520,7 @@ var productMG = [{
         "pic5": "../asset/imgProduct/MG/mgPa/mgPa5/5.jpg"
     },
     {
-        "name": "Washing Machine Samsung Inverter 9.5 KG WW95T4040CESV",
+        "name": "Washing Machine Panasonic Inverter 8.5 KG NA-F85A9BRV",
         "id": "06",
         "brand": "c",
         "price": 1000,
