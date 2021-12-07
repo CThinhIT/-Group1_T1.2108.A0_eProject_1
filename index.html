@@ -32,33 +32,60 @@
                     <span class="tenWeb">LibertyElectronics</span>
                 </div>
                 <div class="collapse navbar-collapse" id="collapsibeNavbar">
-                <div class="search">
-                    <form class="form-inline" action="#">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
-                        <button class="btn btn-success" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </form>
+                    <div class="search">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                            <button class="btn btn-success" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="checkout_login ">
+                        <ul class="navbar-nav">
+                            <div class="checkout">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                                        class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                                        class="total-count"></span>)</a>
+                                </li>
+                            </div>
+                            <div class="login">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./html/login.html"><button type="button"
+                                            class="btn btn-outline-success">
+                                            Login
+                                        </button></a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                <div class="checkout_login ">
-                    <ul class="navbar-nav">
-                        <div class="checkout">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-shopping-basket"
-                                        id="icon_checkout"></i></a>
-                            </li>
+            </nav>
+            <!--Modal-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="login">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./html/login.html"><button type="button" class="btn btn-outline-success">
-                                        Login
-                                    </button></a>
-                            </li>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
                         </div>
-                    </ul>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="./html/checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </nav>
         </header>
         <div class="menu">
             <div class="container" id="ctn_header">
@@ -70,7 +97,8 @@
                     </div>
                     <div class="product">
                         <div class="hoverProduct">
-                            <a href="./html/product.html"><button type="button" class="btn btn-dark btn-block" id="btn2">
+                            <a href="./html/product.html"><button type="button" class="btn btn-dark btn-block"
+                                    id="btn2">
                                     Product
                                 </button></a>
                         </div>
@@ -93,7 +121,8 @@
                                 <a href="./html/viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
                             </div>
                             <div class="type">
-                                <a href="./html/viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i> Fridge</strong></a>
+                                <a href="./html/viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i>
+                                        Fridge</strong></a>
                             </div>
                             <div class="inType">
                                 <a href="./html/viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
@@ -136,19 +165,20 @@
                     <p class="wow bounceInUp" data-wow-delay="0.7s">Liberty Electronics is the company mwhich is about
                         business services , our company work in an
                         electronics field ...</p>
-                    <a href="./html/contact.html" class="btn btn-outline-dark wow bounceInLeft"
-                        data-wow-delay="1s">Read more</a>
+                    <a href="./html/contact.html" class="btn btn-outline-dark wow bounceInLeft" data-wow-delay="1s">Read
+                        more</a>
                 </div>
             </div>
             <div class="carousel-item" data-interval="2000">
-                <img src="./asset/img/580b585b2edbce24c47b29e8.png" style="width: 400px; height: 500px;float:right" alt="...">
+                <img src="./asset/img/580b585b2edbce24c47b29e8.png" style="width: 400px; height: 500px;float:right"
+                    alt="...">
                 <div class="textCarousel">
                     <h1 class="wow bounceInUp" data-wow-delay="0.5s">What we do</h1>
                     <p class="wow bounceInUp" data-wow-delay="0.7s">Our Company try to bring back the best user
                         experiences and the best products . We hope to
                         bring the electronic industry can improve and take part in developing our Country</p>
-                    <a href="./html/about.html" class="btn btn-outline-dark wow bounceInLeft"
-                        data-wow-delay="1s">Read more</a>
+                    <a href="./html/about.html" class="btn btn-outline-dark wow bounceInLeft" data-wow-delay="1s">Read
+                        more</a>
                 </div>
             </div>
         </div>
@@ -175,24 +205,24 @@
                     <div class="row imgCate">
 
                         <div class="col-sm-3">
-                            <h4>Television</h4><a href="./html/viewAllTv.html?key=d"><img src="./asset/img/tivi.jpg" alt="" width="255px"
-                                    height="200px"></a>
+                            <h4>Television</h4><a href="./html/viewAllTv.html?key=d"><img src="./asset/img/tivi.jpg"
+                                    alt="" width="255px" height="200px"></a>
                             <a href="./html/viewAllTv.html?key=d" class="btn btn-outline-dark btn-block">View Now</a>
                         </div>
 
                         <div class="col-sm-3">
-                            <h4>Fridge</h4><a href="./html/viewAllTl.html?key=d"><img src="./asset/img/tulanhHome.jpg" alt="" width="255px"
-                                    height="200px"></a>
+                            <h4>Fridge</h4><a href="./html/viewAllTl.html?key=d"><img src="./asset/img/tulanhHome.jpg"
+                                    alt="" width="255px" height="200px"></a>
                             <a href="./html/viewAllTl.html?key=d" class="btn btn-outline-dark btn-block">View Now</a>
                         </div>
                         <div class="col-sm-3">
-                            <h4>Air Conditional</h4><a href="./html/viewAllMl.html?key=d"><img src="./asset/img/maylanh.jpg" alt="" width="255px"
-                                    height="200px"></a>
+                            <h4>Air Conditional</h4><a href="./html/viewAllMl.html?key=d"><img
+                                    src="./asset/img/maylanh.jpg" alt="" width="255px" height="200px"></a>
                             <a href="./html/viewAllMl.html?key=d" class="btn btn-outline-dark btn-block">View Now</a>
                         </div>
                         <div class="col-sm-3">
-                            <h4>Washing Machine</h4><a href="./html/viewAllMg.html?key=d"><img src="./asset/img/maygiat.jpg" alt="" width="255px"
-                                    height="200px"></a>
+                            <h4>Washing Machine</h4><a href="./html/viewAllMg.html?key=d"><img
+                                    src="./asset/img/maygiat.jpg" alt="" width="255px" height="200px"></a>
                             <a href="./html/viewAllMg.html?key=d" class="btn btn-outline-dark btn-block">View Now</a>
                         </div>
                     </div>
@@ -280,6 +310,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="./js/shopingcart.js"></script>
     <script>
         new WOW().init();
     </script>
