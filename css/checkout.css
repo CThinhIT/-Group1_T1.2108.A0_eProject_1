@@ -5,8 +5,8 @@
   font-weight: bold;
 }
 .contentCheckout{
-  background-color: rgb(159, 217, 255);
-  margin-top: 50px;
+  background-image: url(../asset/img/pexels-jan-kopřiva-3634855.jpg);
+  background-size: contain;
 }
 .productsCheckout{
   margin-left: 230px;
@@ -51,8 +51,8 @@
   margin-right: 85px;
   margin-bottom: 20px;
 }
-.exp {
-  margin-left: 50px;
+.expyear-cvv{
+  margin-top: 20px;
 }
 .credit-cart {
   text-align: left;
@@ -71,7 +71,7 @@
 }
 .customerNotes{
   text-align: center;
-  /* margin-top: 20px; */
+
 }
 .commentCheckout{
   text-align: center;
