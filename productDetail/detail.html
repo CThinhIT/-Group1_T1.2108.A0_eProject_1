@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../css/product.css">
 </head>
 
-<body >
+<body>
     <div class="header">
         <header>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -45,13 +45,15 @@
                     <ul class="navbar-nav">
                         <div class="checkout">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-shopping-basket"
-                                        id="icon_checkout"></i></a>
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                                        class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                                        class="total-count"></span>)</a>
                             </li>
                         </div>
                         <div class="login">
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><button type="button" class="btn btn-outline-success">
+                                <a class="nav-link" href="../html/login.html"><button type="button"
+                                        class="btn btn-outline-success">
                                         Login
                                     </button></a>
                             </li>
@@ -59,6 +61,55 @@
                     </ul>
                 </div>
             </nav>
+            <!--Modal-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="./checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="../html/checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div class="menu">
             <div class="container" id="ctn_header">
@@ -77,36 +128,43 @@
                         </div>
                         <div class="inProduct">
                             <div class="type">
-                                <a href="./viewAllTv.html?key=d"><strong><i class="icon-tivi"></i> TV</strong></a>
+                                <a href="../html/viewAllTv.html?key=d"><strong><i class="icon-tivi"></i> TV</strong></a>
                             </div>
                             <div class="inType">
-                                <a href="./viewAllTv.html?brand=l" class="select"><span>LG</span></a> <br />
-                                <a href="./viewAllTv.html?brand=s" class="select"><span>SamSung</span></a> <br />
-                                <a href="./viewAllTv.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                                <a href="../html/viewAllTv.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllTv.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllTv.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
                             </div>
                             <div class="type">
-                                <a href="./viewAllMl.html?key=d"><strong><i class="icon-maylanh"></i> Air Conditioner</strong></a>
+                                <a href="../html/viewAllMl.html?key=d"><strong><i class="icon-maylanh"></i> Air
+                                        Conditioner</strong></a>
                             </div>
                             <div class="inType">
-                                <a href="./viewAllMl.html?brand=l" class="select"><span>LG</span></a> <br />
-                                <a href="./viewAllMl.html?brand=s" class="select"><span>SamSung</span></a> <br />
-                                <a href="./viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                                <a href="../html/viewAllMl.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllMl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
                             </div>
                             <div class="type">
-                                <a href="./viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i> Fridge</strong></a>
+                                <a href="../html/viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i>
+                                        Fridge</strong></a>
                             </div>
                             <div class="inType">
-                                <a href="./viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
-                                <a href="./viewAllTl.html?brand=s" class="select"><span>SamSung</span></a> <br />
-                                <a href="./viewAllTl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                                <a href="../html/viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllTl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllTl.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
                             </div>
                             <div class="type">
-                                <a href="./viewAllMg.html?key=d"><strong><i class="icon-maygiat"></i> Washing Machine</strong></a>
+                                <a href="../html/viewAllMg.html?key=d"><strong><i class="icon-maygiat"></i> Washing
+                                        Machine</strong></a>
                             </div>
                             <div class="inType">
-                                <a href="./viewAllMg.html?brand=l" class="select"><span>LG</span></a> <br />
-                                <a href="./viewAllMg.html?brand=s" class="select"><span>SamSung</span></a> <br />
-                                <a href="./viewAllMg.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                                <a href="../html/viewAllMg.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllMg.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllMg.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
                             </div>
                         </div>
                     </div>
@@ -129,8 +187,8 @@
     <div class="detailProduct">
         <!-- <div class="container">
             <div class="row"> -->
-                <!--IMG product-->
-                <!-- <div class="col-7">
+        <!--IMG product-->
+        <!-- <div class="col-7">
                     <div class="tab-content">
                         <div id="pic1" class="container tab-pane active"><br>
                             <img src="../asset/imgProduct/TV/tvSS/tvSS1/1.jpg" alt="" class="imgDetail">
@@ -171,8 +229,8 @@
                         </li>
                     </ul>
                 </div> -->
-                <!--Thong tin product-->
-                <!-- <div class="col-5">
+        <!--Thong tin product-->
+        <!-- <div class="col-5">
                     <div class="gioithieuSP">
                         <div class="tenSP">
                             <h2>Samsung Smart TV QLED QA98QN90A</h2>
@@ -309,6 +367,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/product.js"></script>
+    <script src="../js/shopingcart.js"></script>
+    <script src="../js/shopingcart.js"></script>
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
@@ -320,7 +380,7 @@
             autoplayHoverPause: true
         });
     </script>
-    
+
 </body>
 
 </html>

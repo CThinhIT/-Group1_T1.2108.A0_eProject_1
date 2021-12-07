@@ -169,7 +169,7 @@ function displayCart() {
     var output = "Your cart is empty";
     for (var i in cartArray) {
         output += "<tr>"
-            + "<td>" + "<img style='width: 1.75rem; height: 2.5rem; display:block; margin: auto' src=img" + cartArray[i].img + ".jpg alt='thumbnail'></td>"
+            // + "<td>" + "<img style='width: 1.75rem; height: 2.5rem; display:block; margin: auto' src=img" + cartArray[i].img + ".jpg alt='thumbnail'></td>"
             + "<td><b>" + cartArray[i].name + "</b></td>"
             + "<td><b>" + "$" + cartArray[i].price + "</b></td>"
             + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary p-0' data-name=" + cartArray[i].name + ">-</button>"

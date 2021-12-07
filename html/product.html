@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LibertyElectronics</title>
+    <title>Product</title>
     <link rel="shortcut icon" href="../asset/img/logoweb.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -49,21 +49,47 @@
                         <ul class="navbar-nav">
                             <div class="checkout">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fas fa-shopping-basket"
-                                            id="icon_checkout"></i></a>
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                                            class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                                            class="total-count"></span>)</a>
                                 </li>
                             </div>
                             <div class="login">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><button type="button" class="btn btn-outline-success">
-                                            Login
-                                        </button></a>
+                                    <a class="nav-link" href="./login.html"><button type="button" class="btn btn-outline-success">
+                                        Login
+                                    </button></a>
                                 </li>
                             </div>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!--Modal-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="./checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
         <div class="menu">
             <div class="container" id="ctn_header">
@@ -154,7 +180,7 @@
                                 </strong>
                                 <a href="../productDetail/detailnew.html"
                                     class="btn btn-secondary wow fadeInLeftBig">View Now</a>
-                                <a href="" class="btn btn-secondary wow fadeInRightBig">Buy Now</a>
+                                <a href="#" class="add-to-cart btn btn-secondary wow fadeInRightBig" data-name="Smart&nbspTivi&nbspQA98QN90A." data-price="1013732"">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -164,12 +190,12 @@
                         <div class="carousel-caption">
                             <div class="view-buyProduct">
                                 <strong class="name-price">
-                                    <p>LG Inverter 601 liter refrigerator</p>
+                                    <p>Fridge LG Inverter 601 liter</p>
                                     <p class="price">Price: $2.027,86</p>
                                 </strong>
                                 <a href="../productDetail/detailnew2.html"
                                     class="btn btn-secondary wow fadeInLeftBig">View Now</a>
-                                <a href="" class="btn btn-secondary wow fadeInRightBig">Buy Now</a>
+                                    <a href="#" class="add-to-cart btn btn-secondary wow fadeInRightBig" data-name="Fridge&nbspLG&nbspGR-X247MC" data-price="202786"">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +210,7 @@
                                 </strong>
                                 <a href="../productDetail/detailnew3.html"
                                     class="btn btn-secondary wow fadeInLeftBig">View Now</a>
-                                <a href="" class="btn btn-secondary wow fadeInRightBig">Buy Now</a>
+                                    <a href="#" class="add-to-cart btn btn-secondary wow fadeInRightBig" data-name="Washing-Machine&nbspLG&nbspFM1209N6W" data-price="1013732"">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -386,6 +412,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/product.js"></script>
+    <script src="../js/shopingcart.js"></script>
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
