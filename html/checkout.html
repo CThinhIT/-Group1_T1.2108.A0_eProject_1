@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/product.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
-    <link rel="stylesheet" href="../css/shopingcart.css">
+    <link rel="stylesheet" href="../css/shoppingcart.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
   </head>
 
@@ -167,17 +167,8 @@
       <div class="container">
         <div class="titleCheckout">Check Out</div>
          <!--form checkout-->
-        <form onsubmit="alert('Congratulations on your successful order.');return false;" class="was-validated">
+        <form class="was-validated">
         <div class="contentCheckout row">
-            
-          <h4 class="productsCheckout col-sm-4">Products model X:</h4>
-          <div><input type="number" class="numberCheckout" /></div>
-          <button class="btn btn-dark btnTrash">
-            <i class="fas fa-trash-alt"></i>
-          </button>
-          <div class="col-sm-12">
-            <div class="totalCheckout"><h3>TOTAL: $</h3></div>
-          </div>
           <div class="col-sm-6 payCheckout">
             <h5 class="payAdd-Me">Payment address</h5>
             <div class="form-group">
@@ -201,7 +192,7 @@
                 <input type="text" id="city" name="city" class="form-control" placeholder="Ex: Ho Chi Minh city"
                     required>
                 <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="invalid-feedback">Please fill out this field.</div> 
             </div>
 
             <div class="form-group">
@@ -217,11 +208,11 @@
             <h5 class="payAdd-Me">Payment method</h5>
             <label class="contentPay">Select Cards</label>
             <div class="credit-cart">
-              <button class="btn cartCheckout"><i class="fab fa-cc-visa" style="color:navy;"></i></button
-              ><button class="btn cartCheckout"><i class="fab fa-cc-amex" style="color:blue"></i></button
-              ><button class="btn cartCheckout"><i class="fab fa-cc-mastercard" style="color:red"></i></button
-              ><button class="btn cartCheckout"><i class="fab fa-cc-discover" style="color: orange;"></i></button>
-            </div>
+          <button type="button" class="btn cartCheckout"><i class=" fab fa-cc-visa" style="color:navy;"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-amex" style="color:blue"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-mastercard" style="color:red"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-discover" style="color: orange;"></i></button>
+        </div>
             
             <div class="form-group">
                 <label class="contentPay">Credit card number</label>
@@ -265,11 +256,26 @@
             <div class="commentCheckout">
               <textarea class="notesCheckout"></textarea>
             </div>
-            <input type="submit" value="Send order" class="btn btn-warning sendOrder">
+            <button type="submit" id="send" class="btn btn-warning sendOrder">Send order</button>
           </div>
         </form>
         </div>
       </div>
     </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <script>
+      $(document).ready(function () {
+        $("#send").click(function (e) {
+          e.preventDefault();
+          Swal.fire({
+            title: "Congratulations on your successful order",
+            showConfirmButton: true,
+          }).then(function(){
+            window.location.href = "../index.html";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
