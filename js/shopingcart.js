@@ -163,6 +163,12 @@ $('.clear-cart').click(function () {
     return;
 });
 
+$('.clearOrder').click(function () {
+    
+        shoppingCart.clearCart();
+        displayCart();  
+    
+});
 
 function displayCart() {
     var cartArray = shoppingCart.listCart();
