@@ -249,7 +249,7 @@ function showDetailF(pDetail) {
                     <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                 </div>
             </div>
@@ -396,7 +396,7 @@ function showDetail(pDetail) {
                     <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                 </div>
             </div>
