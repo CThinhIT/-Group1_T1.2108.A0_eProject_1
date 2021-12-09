@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+.titleNew {
+    text-align: center;
+}
+
+.chuNewProduct {
+    margin-top: 75px;
+}
+
+.spNew {
+    margin-top: 30px;
+}
+
+.view-buyProduct {
+    float: right;
+}
+.name-price
+{
+    color:slategrey;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.compare-buyFP
+{
+    border: 1px solid;
+    text-align: center;
+}
+.spNoibat
+{
+    margin-top: 30px;
+}
+.imgDetail
+{
+    width: 550px;
+    height: 340px;
+}
+.gioithieuSP
+{
+    margin-top: 20px;
+}
+.reviewSp
+{
+    text-align: center;
+    margin-top: 75px;
+}
+.imgProduct
+{
+    width: 250px;
+    height: 250px;
+}
+.imgProductA
+{
+    width: 360px;
+    height: 250px;
+    padding: 20px;
+}
+h6
+{
+    text-align: center;
+}
+.videoProduct
+{
+    margin-top: 10px;
+}
+.imgProductA:hover
+{
+    transform: scale(1.1);
+}
+.addToCart{
+    margin-top: 100px;
+}

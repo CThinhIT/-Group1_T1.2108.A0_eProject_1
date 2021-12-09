@@ -66,12 +66,13 @@
 .inProduct {
     display: none;
     position: absolute;
-    background: rgb(255, 255, 255);
-    width: 200px;
+    background: rgb(223, 223, 223);
+    width: 250px;
     border-radius: 4px;
     padding: 10px;
     border: 1px solid #eee;
     text-align: left;
+    z-index: 10;
 }
 
 .hoverProduct:hover+.inProduct {
@@ -81,13 +82,63 @@
 .inProduct:hover {
     display: block;
 }
-.select:hover
-{
+
+.select:hover {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
-.select
-{
-    color: rgb(82, 82, 82);
+
+.select {
+    color: rgb(112, 112, 112);
     padding-left: 15px;
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+    background-image: url(../asset/img/icon_common.06102021@2x.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 300px 250px;
+}
+
+.icon-maylanh {
+    background-position: -155px -78px;
+    height: 20px;
+    width: 22px;
+}
+.icon-tulanh {
+    background-position: -105px -80px;
+    height: 20px;
+    width: 22px;
+}
+.icon-maygiat {
+    background-position: -130px -78px;
+    height: 20px;
+    width: 22px;
+}
+.icon-tivi
+{
+    background-position: -85px -78px;
+    height: 20px;
+    width: 22px;
+}
+.showCate
+{
+    text-align: center;
+}
+.imgCate{
+    padding-top: 30px;
+}
+.categories
+{
+    margin-top: 25px;
+}
+.avatar img
+{
+    border-radius: 50%;
+    float: left;
 }

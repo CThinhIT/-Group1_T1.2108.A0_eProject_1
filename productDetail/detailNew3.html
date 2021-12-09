@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibertyElectronics</title>
+    <link rel="shortcut icon" href="../asset/img/logoweb.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="logo_ten">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../asset/img/logoweb.png" alt="logo" style="width: 50px" />
+                    </a>
+                    <span class="tenWeb">LibertyElectronics</span>
+                </div>
+                <div class="search">
+                    <form class="form-inline" action="#">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-success" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="checkout_login">
+                    <ul class="navbar-nav">
+                        <div class="checkout">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                                        class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                                        class="total-count"></span>)</a>
+                            </li>
+                        </div>
+                        <div class="login">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/login.html"><button type="button"
+                                        class="btn btn-outline-success">
+                                        Login
+                                    </button></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <!--Modal-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="../html/checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu">
+            <div class="container" id="ctn_header">
+                <div class="row">
+                    <div class="home">
+                        <a href="../index.html"><button type="button" class="btn btn-dark btn-block" id="btn1">
+                                Home
+                            </button></a>
+                    </div>
+                    <div class="product">
+                        <div class="hoverProduct">
+                            <a href="../html/product.html"><button type="button" class="btn btn-dark btn-block"
+                                    id="btn2">
+                                    Product
+                                </button></a>
+                        </div>
+                        <div class="inProduct">
+                            <div class="type">
+                                <a href="../html/viewAllTv.html?key=d"><strong><i class="icon-tivi"></i> TV</strong></a>
+                            </div>
+                            <div class="inType">
+                                <a href="../html/viewAllTv.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllTv.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllTv.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
+                            </div>
+                            <div class="type">
+                                <a href="../html/viewAllMl.html?key=d"><strong><i class="icon-maylanh"></i> Air
+                                        Conditioner</strong></a>
+                            </div>
+                            <div class="inType">
+                                <a href="../html/viewAllMl.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllMl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
+                            </div>
+                            <div class="type">
+                                <a href="../html/viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i>
+                                        Fridge</strong></a>
+                            </div>
+                            <div class="inType">
+                                <a href="../html/viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllTl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllTl.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
+                            </div>
+                            <div class="type">
+                                <a href="../html/viewAllMg.html?key=d"><strong><i class="icon-maygiat"></i> Washing
+                                        Machine</strong></a>
+                            </div>
+                            <div class="inType">
+                                <a href="../html/viewAllMg.html?brand=l" class="select"><span>LG</span></a> <br />
+                                <a href="../html/viewAllMg.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                                <a href="../html/viewAllMg.html?brand=p" class="select"><span>Panasonic</span></a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <a href="../html/about.html"><button type="button" class="btn btn-dark btn-block" id="btn3">
+                                About Us
+                            </button></a>
+                    </div>
+                    <div class="contact">
+                        <a href="../html/contact.html"><button type="button" class="btn btn-dark btn-block" id="btn4">
+                                Contact
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--view detail-->
+    <div id="detailProduct">
+        <div class="container">
+            <div class="row">
+                <!--IMG product-->
+                <div class="col-7">
+                    <div class="tab-content">
+                        <div id="pic1" class="container tab-pane active"><br>
+                            <img src="../asset/imgProduct/MG/mgLG/mgLG2/1.jpg" alt="" class="imgDetail">
+                        </div>
+                        <div id="pic2" class="container tab-pane fade"><br>
+                            <img src="../asset/imgProduct/MG/mgLG/mgLG2/2.jpg" alt="" class="imgDetail">
+                        </div>
+                        <div id="pic3" class="container tab-pane fade"><br>
+                            <img src="../asset/imgProduct/MG/mgLG/mgLG2/3.jpg" alt="" class="imgDetail">
+                        </div>
+                        <div id="pic4" class="container tab-pane fade"><br>
+                            <img src="../asset/imgProduct/MG/mgLG/mgLG2/4.jpg" alt="" class="imgDetail">
+                        </div>
+                        <div id="pic5" class="container tab-pane fade"><br>
+                            <img src="../asset/imgProduct/MG/mgLG/mgLG2/5.jpg" alt="" class="imgDetail">
+                        </div>
+                    </div>
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#pic1"><img
+                                    src="../asset/imgProduct/MG/mgLG/mgLG2/1.jpg" alt="" width="80px" height="50px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pic2"><img
+                                    src="../asset/imgProduct/MG/mgLG/mgLG2/2.jpg" alt="" width="80px" height="50px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pic3"><img
+                                    src="../asset/imgProduct/MG/mgLG/mgLG2/3.jpg" alt="" width="80px" height="50px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pic4"><img
+                                    src="../asset/imgProduct/MG/mgLG/mgLG2/4.jpg" alt="" width="80px" height="50px"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pic5"><img
+                                    src="../asset/imgProduct/MG/mgLG/mgLG2/5.jpg" alt="" width="80px" height="50px"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Thong tin product-->
+                <div class="col-5">
+                    <div class="gioithieuSP">
+                        <div class="tenSP">
+                            <h2>Washing Machine LG FM1209N6W</h2>
+                        </div>
+                        <div class="thongsoSP">
+
+                        </div>
+                        <div class="giaSP">
+                            <h3>Price: $433.319</h3>
+                        </div>
+                        <div class="addToCart">
+                            <a href="#" class="add-to-cart btn btn-dark" data-name="Washing-Machine&nbspLG&nbspFM1209N6W" data-price="433319">Add to cart</a>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myReview">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="" onsubmit="myFunctionAlert()">
+                    <div class="form-group">
+                      <label for="uname">Your Name:</label>
+                      <input type="text" class="form-control" id="uname" placeholder="Enter your name" name="uname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="uname">Your Feedback:</label>
+                        <input type="text" class="form-control" placeholder="Enter your feedback" required>
+                    </div>                   
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <!--View review-->
+    <div class="reviewSp">
+        <h1>Some Reviews</h1>
+        <section class="testimonial">
+            <div id="carouselExampleControls" class="carousel slide mt-5 text-center" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-8 offset-md-2 overflow-auto">
+
+                                <div class="avatar">
+                                    <img src="../asset/img/avatar2.jpg" class="d-block mx-auto" alt="Avatar"
+                                        style="width:280px" height="280px">
+                                </div>
+                                <div class="feedback d-flex flex-column justify-content-center align-items-center">
+                                    <p><b>John Doe</b> - Freelance Photographer.</p>
+                                    <p><sup><i class="fas fa-quote-left"></i></sup>
+                                        My family loves it.
+                                        <sup><i class="fas fa-quote-right"></sup></i></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-8 offset-md-2 overflow-auto">
+
+                                <div class="avatar">
+                                    <img src="../asset/img/avatar1.jpg" class="d-block mx-auto" alt="Avatar"
+                                        style="width:280px" height="280px">
+                                </div>
+                                <div class="feedback d-flex flex-column justify-content-center align-items-center">
+                                    <p><b>Emily Bui</b> - Pharmacist.</p>
+                                    <p><sup><i class="fas fa-quote-left"></i></sup>
+                                        It works great !!!
+                                        <sup><i class="fas fa-quote-right"></sup></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-8 offset-md-2 overflow-auto">
+
+                                <div class="avatar">
+                                    <img src="../asset/img/avatar3.jpg" class="d-block mx-auto" alt="Avatar"
+                                        style="width:280px" height="280px">
+                                </div>
+                                <div class="feedback d-flex flex-column justify-content-center align-items-center">
+                                    <p><b>Amanda Cerny</b> - Fashion model. </p>
+                                    <p><sup><i class="fas fa-quote-left"></i></sup>
+                                        It is really cool I love it.
+                                        <sup><i class="fas fa-quote-right"></sup></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl" id="myModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex flex-column">
+                        <h5 class="modal-title" id="exampleModalLabel">Next Info update in Dec 7<sup>th</sup>, 2021.
+                        </h5>
+                        
+                    </div>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Product Comparison Table  -->
+                    <div class="container pb-5 mb-2">
+                        <div class="comparison-table">
+                            <table class="table table-bordered">
+                               
+                                <thead class="bg-secondary">
+                                    <tr class="nameCompare">
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody id="network" data-filter="target">
+                                    <tr class="bg-secondary lableCompare">
+                                        
+                                        
+                                    </tr>
+                                    <tr class="sizeCompare">
+                                        
+                                        
+                                    </tr>
+                                </tbody>
+                                <tbody id="misc" data-filter="target">
+                                    <tr class="relaseYear">
+                                        
+                                    </tr>
+                                    <tr class="priceCompare">
+                                        
+                                    </tr>
+            
+                                </tbody>
+                            
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="footer">
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="mailto:congthinh.0311@gmail.com"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+
+                <!-- Section: Form -->
+                <section class="">
+                    <form action="">
+                        <!--Grid row-->
+                        <div class="row d-flex justify-content-center">
+                            <!--Grid column-->
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Sign up for our newsletter</strong>
+                                </p>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-5 col-12">
+                                <!-- Email input -->
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example21" class="form-control" />
+                                    <!-- <label class="form-label" for="form5Example21">Email address</label> -->
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                    </form>
+                </section>
+                <!-- Section: Form -->
+
+                <!-- Section: Text -->
+                <section class="mb-4">
+                    <p>Hotline: 210.820.03</p>
+                    <p>Address: 590 CMT8, Ward 11, District 3, Ho Chi Minh City.</p>
+                </section>
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2021 Copyright: Developed by group 1, class T1.2108.A0
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/animate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/shopingcart.js"></script>
+    <script src="../js/product.js"></script>
+    <script >
+        function myFunctionAlert()
+        {
+            alert("Thank you\nYour FeedBack have send!!!");
+        }
+    </script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            // margin: 30,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true
+        });
+    </script>
+</body>
+
+</html>

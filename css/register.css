@@ -1,0 +1,35 @@
+body{
+    background-image:url(../asset/img/istockphoto-1291318636-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    border:1px solid black;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    box-shadow: 12px 12px 2px 1px rgba(78, 76, 76, 0.5) ;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.registerForm{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+label{
+    color: white;
+}
+h2{
+    color: white;
+}
+button{
+    margin-bottom: 10px;
+}
+section{
+    text-align: center;
+}
+.footer{
+    font-size:20px;
+    font-weight: 100px;
+}

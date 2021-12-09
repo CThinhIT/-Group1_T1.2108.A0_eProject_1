@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibertyElectronics</title>
+    <link rel="shortcut icon" href="../asset/img/logoweb.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/shopingcart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/animate.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
+    <link rel="stylesheet" href="../css/shoppingcart.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="logo_ten">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../asset/img/logoweb.png"
+                alt="logo"
+                style="width: 50px"
+              />
+            </a>
+            <span class="tenWeb">LibertyElectronics</span>
+          </div>
+          <div class="search">
+            <form class="form-inline" action="#">
+              <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn btn-success" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="checkout_login">
+            <ul class="navbar-nav">
+              <div class="checkout">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                    class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                    class="total-count"></span>)</a>
+                </li>
+              </div>
+              <div class="login">
+                <li class="nav-item">
+                  <a class="nav-link" href="./login.html"
+                    ><button type="button" class="btn btn-outline-success">
+                      Login
+                    </button></a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+        <!--Modal-->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">Clear Cart</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="./checkout.html" class="btn btn-primary">Order now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+      </header>
+      <div class="menu">
+        <div class="container" id="ctn_header">
+          <div class="row">
+            <div class="home">
+              <a href="../index.html"
+                ><button type="button" class="btn btn-dark btn-block" id="btn1">
+                  Home
+                </button></a
+              >
+            </div>
+            <div class="product">
+              <div class="hoverProduct">
+                <a href="./product.html"
+                  ><button
+                    type="button"
+                    class="btn btn-dark btn-block"
+                    id="btn2"
+                  >
+                    Product
+                  </button></a
+                >
+              </div>
+              <div class="inProduct">
+                <div class="type">
+                    <a href="./viewAllTv.html?key=d"><strong><i class="icon-tivi"></i> TV</strong></a>
+                </div>
+                <div class="inType">
+                    <a href="./viewAllTv.html?brand=l" class="select"><span>LG</span></a> <br />
+                    <a href="./viewAllTv.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                    <a href="./viewAllTv.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                </div>
+                <div class="type">
+                    <a href="./viewAllMl.html?key=d"><strong><i class="icon-maylanh"></i> Air
+                            Conditioner</strong></a>
+                </div>
+                <div class="inType">
+                    <a href="./viewAllMl.html?brand=l" class="select"><span>LG</span></a> <br />
+                    <a href="./viewAllMl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                    <a href="./viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                </div>
+                <div class="type">
+                    <a href="./viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i> Fridge</strong></a>
+                </div>
+                <div class="inType">
+                    <a href="./viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
+                    <a href="./viewAllTl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                    <a href="./viewAllTl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                </div>
+                <div class="type">
+                    <a href="./viewAllMg.html?key=d"><strong><i class="icon-maygiat"></i> Washing
+                            Machine</strong></a>
+                </div>
+                <div class="inType">
+                    <a href="./viewAllMg.html?brand=l" class="select"><span>LG</span></a> <br />
+                    <a href="./viewAllMg.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                    <a href="./viewAllMg.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+                </div>
+            </div>
+            </div>
+            <div class="about">
+              <a href="./about.html"
+                ><button type="button" class="btn btn-dark btn-block" id="btn3">
+                  About Us
+                </button></a
+              >
+            </div>
+            <div class="contact">
+              <a href="./contact.html"
+                ><button type="button" class="btn btn-dark btn-block" id="btn4">
+                  Contact
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="bodyCheckout">
+      <div class="container">
+        <div class="titleCheckout">Check Out</div>
+         <!--form checkout-->
+        <form class="was-validated">
+        <div class="contentCheckout row">
+          <div class="col-sm-6 payCheckout">
+            <h5 class="payAdd-Me">Payment address</h5>
+            <div class="form-group">
+                <label class="contentPay"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" class="form-control"
+                    placeholder="Ex: Johnny Dang" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fa fa-envelope"></i> Phone number</label>
+                <input type="text" id="phone" name="phone" class="form-control"
+                    placeholder="Ex: 0908765432" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fas fa-city"></i> City</label>
+                <input type="text" id="city" name="city" class="form-control" placeholder="Ex: Ho Chi Minh city"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div> 
+            </div>
+
+            <div class="form-group">
+                <label class="contentPay"><i class="fas fa-address-card"></i> Address</label>
+                <input type="text" id="adr" name="address" class="form-control"
+                    placeholder="Ex: Orange county" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+          </div>
+          <div class="col-sm-6 payCheckout">
+            <h5 class="payAdd-Me">Payment method</h5>
+            <label class="contentPay">Select Cards</label>
+            <div class="credit-cart">
+          <button type="button" class="btn cartCheckout"><i class=" fab fa-cc-visa" style="color:navy;"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-amex" style="color:blue"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-mastercard" style="color:red"></i></button
+          ><button type="button" class="btn cartCheckout"><i class="fab fa-cc-discover" style="color: orange;"></i></button>
+        </div>
+            
+            <div class="form-group">
+                <label class="contentPay">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" class="form-control"
+                    placeholder="1111-2222-3333-4444" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            
+            <div class="form-group">
+                <label class="contentPay">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" class="form-control"
+                    placeholder="Ex: December" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            
+            <div class="row expyear-cvv">
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="contentPay">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" class="form-control"
+                        placeholder="Ex: 2021" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="contentPay">CVV</label>
+                    <input type="text" id="cvv" name="cvv" class="form-control"
+                        placeholder="xxx" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 customerNotes">
+            <h6>Customer notes</h6>
+            <div class="commentCheckout">
+              <textarea class="notesCheckout"></textarea>
+            </div>
+            <button type="submit" id="send" class="btn btn-warning sendOrder">Send order</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <script src="../js/shopingcart.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#send").click(function (e) {
+          e.preventDefault();
+          Swal.fire({
+            title: "Congratulations on your successful order",
+            showConfirmButton: true,
+          }).then(function(){
+            window.location.href = "../index.html";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

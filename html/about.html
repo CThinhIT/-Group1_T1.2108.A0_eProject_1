@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="shortcut icon" href="../asset/img/logoweb.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../css/animate.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/carousel.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/scrollbar.css">
+</head>
+
+<body>
+  <div class="header">
+    <header>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="logo_ten">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../asset/img/logoweb.png" alt="logo" style="width: 50px" />
+                    </a>
+                    <span class="tenWeb">LibertyElectronics</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="search">
+                        <form class="form-inline" action="#">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" />
+                            <button class="btn btn-success" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="checkout_login">
+                        <ul class="navbar-nav">
+                            <div class="checkout">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart"><i
+                                            class="fas fa-shopping-basket" id="icon_checkout"></i>(<span
+                                            class="total-count"></span>)</a>
+                                </li>
+                            </div>
+                            <div class="login">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./login.html"><button type="button" class="btn btn-outline-success">
+                                        Login
+                                    </button></a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Modal-->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="show-cart table">
+
+                            </table>
+                            <div>Total price: $<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="clear-cart btn btn-danger">Clear Cart</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="./checkout.html" class="btn btn-primary">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div class="menu">
+      <div class="container" id="ctn_header">
+        <div class="row">
+          <div class="home">
+            <a href="../index.html"><button type="button" class="btn btn-dark btn-block" id="btn1">
+                Home
+              </button></a>
+          </div>
+          <div class="product">
+            <div class="hoverProduct">
+              <a href="./product.html"><button type="button" class="btn btn-dark btn-block" id="btn2">
+                  Product
+                </button></a>
+            </div>
+            <div class="inProduct">
+              <div class="type">
+                <a href="./viewAllTv.html?key=d"><strong><i class="icon-tivi"></i> TV</strong></a>
+              </div>
+              <div class="inType">
+                <a href="./viewAllTv.html?brand=l" class="select"><span>LG</span></a> <br />
+                <a href="./viewAllTv.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                <a href="./viewAllTv.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+              </div>
+              <div class="type">
+                <a href="./viewAllMl.html?key=d"><strong><i class="icon-maylanh"></i> Air
+                    Conditioner</strong></a>
+              </div>
+              <div class="inType">
+                <a href="./viewAllMl.html?brand=l" class="select"><span>LG</span></a> <br />
+                <a href="./viewAllMl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                <a href="./viewAllMl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+              </div>
+              <div class="type">
+                <a href="./viewAllTl.html?key=d"><strong><i class="icon-tulanh"></i> Fridge</strong></a>
+              </div>
+              <div class="inType">
+                <a href="./viewAllTl.html?brand=l" class="select"><span>LG</span></a> <br />
+                <a href="./viewAllTl.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                <a href="./viewAllTl.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+              </div>
+              <div class="type">
+                <a href="./viewAllMg.html?key=d"><strong><i class="icon-maygiat"></i> Washing
+                    Machine</strong></a>
+              </div>
+              <div class="inType">
+                <a href="./viewAllMg.html?brand=l" class="select"><span>LG</span></a> <br />
+                <a href="./viewAllMg.html?brand=s" class="select"><span>SamSung</span></a> <br />
+                <a href="./viewAllMg.html?brand=p" class="select"><span>Panasonic</span></a> <br />
+              </div>
+            </div>
+          </div>
+          <div class="about">
+            <a href="./about.html"><button type="button" class="btn btn-dark btn-block" id="btn3">
+                About Us
+              </button></a>
+          </div>
+          <div class="contact">
+            <a href="./contact.html"><button type="button" class="btn btn-dark btn-block" id="btn4">
+                Contact
+              </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- text 1 -->
+  <div class="text1" id="Carousel_1">
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <img src="../asset/img/xay-dung-hinh-anh-doanh-nha-1.jpg" alt="" style="
+            float: right;
+            width: 500px;
+            height: 300px;
+            margin-right: 100px;
+            margin-top: 30px;
+          " />
+      <div class="About-us">
+        <h2 align="center">Who we are</h2>
+        <p style="margin-left: 70px">
+          Liberty Electronics is a business services company, our company is
+          in the field of electronics. The company was born in early 2020 and
+          we have always been a pioneer in developing and improving electronic
+          technology products. Our company has cooperated with many famous
+          brands in this industry such as Samsung, LG, Toshiba, ... to create
+          many advanced products to bring to users.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- text 2 -->
+  <div data-aos="fade-down" data-aos-duration="3000" class="text2" id="Carousel_2">
+    <img src="../asset/img/business_DBMY.jpg" alt="" style="
+          float: left;
+          width: 500px;
+          height: 300px;
+          margin-left: 70px;
+          margin-top: 30px;
+        " />
+    <div class="About-us">
+      <h2 align="center">What we can</h2>
+      <p style="margin-right: 10px; margin-left: 80px">
+        Our Company try to bring back the best user experiences and the best
+        products. By practical experience, we offer breakthrough policies in
+        terms of quality.We hope to bring the electronic industry can improve
+        and take part in developing our Country.
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:congthinh.0311@gmail.com" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example21" class="form-control" />
+                  <!-- <label class="form-label" for="form5Example21">Email address</label> -->
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>Hotline: 210.820.03</p>
+          <p>Address: 590 CMT8, Ward 11, District 3, Ho Chi Minh City.</p>
+        </section>
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright: Developed by group 1, class T1.2108.A0
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="../js/shopingcart.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

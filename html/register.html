@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="Enter your description here" />
+  <link rel="shortcut icon" href="../asset/img/logoweb.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- <link rel="shortcut icon" href="./asset/img/logoweb.png"> -->
+  <link rel="stylesheet" href="../css/register.css" />
+  <title>Register</title>
+</head>
+
+<body>
+  <div class="container col-4 registerForm">
+    <form class="row g-3 needs-validation" novalidate
+      oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+      <h2>Create your account here</h2>
+      <div class="col-md-10">
+        <label for="validationCustom01" class="form-label label">First name</label>
+        <input type="text" class="form-control myInput" id="validationCustom01" placeholder="First name" required />
+        <div class="invalid-feedback">Please enter your first name</div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustom02" class="form-label label">Last name</label>
+        <input type="text" class="form-control myInput" id="validationCustom02" placeholder="Last name" required />
+        <div class="invalid-feedback">This field is empty</div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustomUsername" class="form-label label">Username</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control myInput" id="validationCustomUsername"
+            aria-describedby="inputGroupPrepend" placeholder="Username" required />
+          <div class="invalid-feedback">Please enter a username</div>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustom03" class="form-label label">Passwords</label>
+        <input type="password" class="form-control myInput" id="validationCustom03" name="up" placeholder="Passwords"
+          required />
+        <div class="invalid-feedback">Please fill in this field.</div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustom03" class="form-label label">Confirm Password</label>
+        <input type="password" class="form-control myInput" id="validationCustom03" name="up2"
+          placeholder="Confirm Password" required />
+        <div class="invalid-feedback">Please fill in this field.</div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustom03" class="form-label label">Email</label>
+        <input type="text" class="form-control myInput" id="validationCustom03" placeholder="Email" required />
+        <div class="invalid-feedback">Please fill in this field.</div>
+      </div>
+      <div class="col-md-10">
+        <label for="validationCustom04" class="form-label label">Phone Number</label>
+        <input type="text" class="form-control myInput" id="validationCustom04" placeholder="Phone number" required />
+        <div class="invalid-feedback">Please enter a valid phone number.</div>
+      </div>
+      <div class="col-md-7">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </div>
+  <div class="container footer">
+    <section class="mb-4">
+      <p>Hotline: 210.820.03</p>
+      <p>Address: 590 CMT8, Ward 11, District 3, Ho Chi Minh City.</p>
+    </section>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2021 Copyright: Developed by group 1, class T1.2108.A0
+    </div>
+  </div>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css" />
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+          "submit",
+          function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            } else {
+              event.preventDefault();
+              Swal.fire({
+                icon: "success",
+                title: "Congratulations, you have registered successfully !",
+                showConfirmButton: true,
+                timer: 2000,
+                timerProgressBar: true,
+              }).then(function () {
+                window.location.href = "../index.html";
+              });
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

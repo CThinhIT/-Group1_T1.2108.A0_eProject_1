@@ -1,0 +1,86 @@
+.titleCheckout {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contentCheckout{
+  background-image: url(../asset/img/pexels-jan-kopřiva-3634855.jpg);
+  background-size: contain;
+}
+.productsCheckout{
+  margin-left: 230px;
+  margin-top: 70px;
+}
+.numberCheckout {
+  margin-top: 70px;
+}
+.btnTrash{
+  color: white;
+  margin-left: 30px;
+  height: 34px;
+  margin-top: 70px;
+}
+.totalCheckout{
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid;
+  
+  border-bottom: 1px solid;
+}
+.payCheckout{
+  text-align: center;
+  margin-top: 50px;
+}
+.payAdd-Me{
+  margin-bottom: 20px;
+}
+.contentPay {
+  text-align: left;
+}
+.textCheckout {
+  margin-bottom: 20px;
+}
+.fullName {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.selectCart {
+  width: 50px;
+  height: 40px;
+  margin-right: 85px;
+  margin-bottom: 20px;
+}
+.expyear-cvv{
+  margin-top: 20px;
+}
+.credit-cart {
+  text-align: left;
+}
+.cartCheckout{
+    padding: 2px 0;
+    margin-bottom: 20px;
+    width: 50px;
+    font-size: 24px;
+}
+.contentPay {
+  margin-top: 39px;
+}
+.expyear-cvv {
+  margin-top: -20px;
+}
+.customerNotes{
+  text-align: center;
+
+}
+.commentCheckout{
+  text-align: center;
+}
+.notesCheckout{
+  width: 600px;
+  height: 200px;
+}
+.sendOrder{
+  margin-top: 21px;
+  margin-bottom: 70px;
+}
