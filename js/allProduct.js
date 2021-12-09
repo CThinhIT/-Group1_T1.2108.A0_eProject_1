@@ -178,6 +178,97 @@ var productTV = [{
         "pic4": "../asset/imgProduct/TV/tvSS/tvSS6/4.jpg",
         "pic5": "../asset/imgProduct/TV/tvSS/tvSS6/5.jpg"
     }
+    ,
+    {
+        "name": "Smart Television Panasonic 4K 40 inch TH-40DX650V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-40DX650V",
+        "id": "01",
+        "size": "40 inch",
+        "year": 2017,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 343031,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa1/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa1/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa1/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa1/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa1/5.jpg"
+    },
+    {
+        "name": "Smart Television Panasonic 40 inch TH-40C400V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-40C400V",
+        "id": "02",
+        "size": "40 inch",
+        "year": 2018,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 333912,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa2/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa2/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa2/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa2/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa2/5.jpg"
+    },
+    {
+        "name": "Smart Television Panasonic 4K 58 inch TH-58DX700V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-58DX700V",
+        "id": "03",
+        "size": "58 inch",
+        "year": 2015,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 959618,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa3/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa3/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa3/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa3/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa3/5.jpg"
+    },
+    {
+        "name": "Smart Television Panasonic 4K 58 inch TH-58DX700V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-58DX700V",
+        "id": "04",
+        "size": "58 inch",
+        "year": 2020,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 959618,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa4/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa4/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa4/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa4/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa4/5.jpg"
+    },
+    {
+        "name": "Smart Television Panasonic 32 inch TH-32ES500V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-32ES500V",
+        "id": "05",
+        "size": "32 inch",
+        "year": 2019,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 240990,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa5/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa5/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa5/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa5/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa5/5.jpg"
+    },
+    {
+        "name": "Smart Television Panasonic 32 inch TH-32C300V",
+        "nameC": "Smart&nbspTelevision&nbspPanasonic&nbspTH-32C300V",
+        "id": "06",
+        "size": "32 inch",
+        "year": 2015,
+        "brand": "c",
+        "brandS": "Panasonic",
+        "price": 230135,
+        "pic1": "../asset/imgProduct/TV/tvPa/tvPa6/1.jpg",
+        "pic2": "../asset/imgProduct/TV/tvPa/tvPa6/2.jpg",
+        "pic3": "../asset/imgProduct/TV/tvPa/tvPa6/3.jpg",
+        "pic4": "../asset/imgProduct/TV/tvPa/tvPa6/4.jpg",
+        "pic5": "../asset/imgProduct/TV/tvPa/tvPa6/5.jpg"
+    }
 ]
 
 var productTL = [{
@@ -1083,7 +1174,11 @@ function showProduct1(product) {
     $("#tatcaspTV").html(x);
 }
 showProduct1(productTV);
-
+var url=window.location.href;
+var h=url.slice(-13,-11);
+var k =url.slice(-15,-13);
+var j = url.slice(-15,-13);
+if(h=="Tv" || k=="TV" ||j =="Tv"){
 function showModal1(show) {
     let z = `<td style="background-color:white;">
 
@@ -1126,7 +1221,8 @@ function showModal1(show) {
     $(".priceCompare").html(d);
 }
 showModal1(productTV);
-
+}
+else if(h=="Tl" || k=="TL" ||j =="Tl"){
 function showModal2(show) {
     let z = `<td style="background-color:white;">
 
@@ -1169,7 +1265,8 @@ function showModal2(show) {
     $(".priceCompare").html(d);
 }
 showModal2(productTL);
-
+}
+else if(h=="Mg" ||k=="MG" ||j =="Mg"){
 function showModal3(show) {
     let z = `<td style="background-color:white;">
 
@@ -1212,7 +1309,8 @@ function showModal3(show) {
     $(".priceCompare").html(d);
 }
 showModal3(productMG);
-
+}
+else if(h=="Ml" || k=="ML" ||j =="Ml"){
 function showModal4(show) {
     let z = `<td style="background-color:white;">
 
@@ -1255,7 +1353,7 @@ function showModal4(show) {
     $(".priceCompare").html(d);
 }
 showModal4(productML);
-
+}
 function showProduct2(product) {
     let x = ``;
     var urlID = window.location.href;
@@ -1581,7 +1679,7 @@ function showDetail4(proDuct4) {
                         <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                     </div>
                 </div>
@@ -1661,7 +1759,7 @@ function showDetail3(proDuct3) {
                         <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                     </div>
                 </div>
@@ -1741,7 +1839,7 @@ function showDetail2(proDuct2) {
                         <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                     </div>
                 </div>
@@ -1821,7 +1919,7 @@ function showDetail(proDuct) {
                         <div class="addToCart">
                             <a href="#" class="add-to-cart btn btn-dark" data-name="${v.nameC}" data-price="${v.price}">Add to cart</a>
                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Compare</a>
-                            <a href="#" class="btn btn-dark">Add review</a>
+                            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#myReview">Add review</a>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="../js/loading.js"></script>
+  <!-- <script src="../js/loading.js"></script> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -20,16 +20,16 @@
   <link rel="stylesheet" href="../css/footer.css" />
   <link rel="stylesheet" href="../css/header.css" />
   <link rel="stylesheet" href="../css/contact.css" />
-  <link rel="stylesheet" href="../css/loading.css" />
+  <!-- <link rel="stylesheet" href="../css/loading.css" /> -->
   <link rel="stylesheet" href="../css/scrollbar.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="preloading">
   <!-- Hiệu ứng load -->
-  <div class="load">
+  <!-- <div class="load">
     <img src="../asset/img/Loading.gif" />
-  </div>
+  </div> -->
   <div class="content">
     <div class="header" class="container-fluid">
       <header>
@@ -167,15 +167,15 @@
         </video>
         <div class="textBox">
           <h3 class="headingPrimary">
-            <p class="headingMain wow bounceInLeft" data-wow-delay="3s">Contact Us</p>
-            <p class="headingSub wow bounceInRight" data-wow-delay="3.5s">We are here to serve you</p>
+            <p class="headingMain wow bounceInLeft" >Contact Us</p>
+            <p class="headingSub wow bounceInRight" ">We are here to serve you</p>
           </h3>
         </div>
       </div>
       
       <div class="container" >
-        <div class="title wow bounceIn" data-wow-delay="4s">Have about to report</div>
-        <form action="">
+        <div class="title wow bounceIn" data-wow-delay="1s">Have about to report</div>
+        <form action="" onsubmit="functionAlert()">
           <div class="row">
             <div class="col-sm-6">
               <h3>Your name</h3>
@@ -305,6 +305,12 @@
   </script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    function functionAlert(){
+
+      alert("Your FeedBack have send!!!");
+    }
   </script>
   </div>
 </body>

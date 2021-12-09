@@ -137,3 +137,8 @@
 {
     margin-top: 25px;
 }
+.avatar img
+{
+    border-radius: 50%;
+    float: left;
+}
